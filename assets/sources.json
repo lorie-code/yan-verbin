@@ -1,0 +1,45 @@
+{
+  "checked": "2026-09-28",
+  "weexEvent": "https://www.weex.com/events/welcome-event?vipCode=syd0",
+  "registrationLink": "https://www.weex.com/register?from=https%3A%2F%2Fwww.weex.com%2Fevents%2Fwelcome-event%3FvipCode%3Dsyd0&vipCode=syd0",
+  "officialHeadline": "New users unlock up to 10,000 USDT",
+  "selectedTasks": [
+    {
+      "amount": "10",
+      "unit": "USDT",
+      "type": "Coupon",
+      "title": "Create your account",
+      "condition": "Register through Yan’s WEEX invitation link."
+    },
+    {
+      "amount": "10",
+      "unit": "USDT",
+      "type": "Trial fund",
+      "title": "Make a qualifying deposit",
+      "condition": "Net deposit ≥ 100 USDT and hold for 3 consecutive days."
+    },
+    {
+      "amount": "200",
+      "unit": "USDT · 20×",
+      "type": "Position airdrop",
+      "title": "Complete your first futures trade",
+      "condition": "First futures trade ≥ 2,000 USDT. A leveraged position reward, not a cash payment."
+    },
+    {
+      "amount": "10",
+      "unit": "USDT",
+      "type": "Coupon",
+      "title": "Log in to the app",
+      "condition": "Receive a coupon on your first WEEX app login."
+    }
+  ],
+  "telegram": "https://t.me/+JQRJCw2XdHI0MGFi",
+  "telegramLandingTitle": "Yan Verbin | Community",
+  "officialContact": "https://t.me/onlyprofitadm",
+  "notes": [
+    "Contact link read from the official Telegram invite landing page.",
+    "No message sent and no community joined.",
+    "Selected welcome tasks only; temporary TOKEN2049, AI Wars II and TradFi campaigns not copied into this site.",
+    "No service price, checkout or domain binding was provided."
+  ]
+}
