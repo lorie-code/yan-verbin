@@ -1,4 +1,302 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Торговый подход Яна Вербина: структура рынка, ликвидность, торговые сценарии и риск. Присоединяйтесь к сообществу и узнайте о приветственных наградах WEEX."><title>YAN VERBIN × WEEX — Читай рынок. Торгуй по плану.</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="config.js" defer></script><script src="translations.js" defer></script><script src="app.js" defer></script></head><body><svg class="symbol-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Торговый подход Яна Вербина: структура рынка, ликвидность, торговые сценарии и риск. Присоединяйтесь к сообществу и узнайте о приветственных наградах WEEX."><title>YAN VERBIN × WEEX — Читай рынок. Торгуй по плану.</title><link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxMTEzMTAiLz48dGV4dCB4PSI4IiB5PSI0NCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmb250LXNpemU9IjMyIiBsZXR0ZXItc3BhY2luZz0iLTQiIGZpbGw9IiNmNWY1ZWYiPllWPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml"><style>:root {
+  color-scheme: dark;
+  --bg: #000;
+  --surface: #141414;
+  --surface-hover: #1c1c1c;
+  --line: #282828;
+  --text: #f7f7f7;
+  --muted: #999;
+  --yellow: #ffe762;
+  --yellow-hover: #fff18d;
+  --radius: 16px;
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+main { overflow: clip; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; cursor: pointer; }
+button, a, summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+button:disabled { cursor: default; }
+button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex="0"]:focus-visible { outline: 2px solid var(--yellow); outline-offset: 4px; }
+img { max-width: 100%; height: auto; display: block; }
+h1, h2, h3, p { margin: 0; }
+p { line-height: 1.7; }
+h1, h2, h3 { font-weight: 600; }
+[hidden] { display: none !important; }
+::selection { background: var(--yellow); color: #000; }
+.wrap { width: min(1200px, calc(100% - 80px)); margin-inline: auto; }
+.symbol-library { position: absolute; width: 0; height: 0; overflow: hidden; }
+.icon { display: block; width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+.eyebrow { font-size: 14px; line-height: 1.5; font-weight: 600; }
+.button { display: inline-flex; justify-content: center; align-items: center; gap: 14px; min-height: 48px; padding: 12px 25px; border: 1px solid transparent; border-radius: 100px; font-size: 15px; font-weight: 600; line-height: 1.5; text-align: center; transition: background .18s, border-color .18s, color .18s; }
+.button .icon { width: 19px; height: 19px; }
+.button-white, .button-black { background: var(--yellow); color: #090909; }
+.button-white:hover, .button-black:hover { background: var(--yellow-hover); }
+.button-outline { background: transparent; border-color: #4b4b4b; color: #fff; }
+.button-outline:hover { background: #222; border-color: #777; }
+.text-link { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 600; }
+.text-link .icon { width: 17px; height: 17px; }
+.text-link:hover { color: var(--yellow); }
+.small-dot { width: 5px; height: 5px; background: var(--yellow); border-radius: 50%; flex-shrink: 0; }
+.skip-link { position: fixed; left: 12px; top: -70px; z-index: 100; padding: 12px 20px; border-radius: 8px; background: var(--yellow); color: #000; }
+.skip-link:focus { top: 12px; }
+.announcement { display: flex; align-items: center; justify-content: center; gap: 9px; padding: 8px 20px; background: #121212; color: #aaa; min-height: 34px; font-size: 11px; }
+.announcement a { color: var(--yellow); margin-left: 12px; white-space: nowrap; }
+.site-header { position: sticky; top: 0; height: 72px; z-index: 50; background: #000000f5; border-bottom: 1px solid #202020; backdrop-filter: blur(16px); }
+.nav-shell { display: flex; align-items: center; height: 100%; gap: 32px; width: min(1360px, calc(100% - 48px)); }
+.header-brand-lockup { display: flex; align-items: center; gap: 15px; flex-shrink: 0; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-name { font-size: 17px; line-height: 1.15; font-weight: 700; white-space: nowrap; }
+.brand-name small { display: block; margin-top: 7px; color: #8a8a8a; font-size: 8px; font-weight: 400; }
+.site-header .brand-name small, .site-header .brand-monogram { display: none; }
+.brand-monogram { position: relative; font-size: 31px; font-weight: 700; letter-spacing: -5px; padding-right: 10px; line-height: 1; }
+.brand-monogram > span { position: absolute; top: -2px; right: 0; font-size: 15px; letter-spacing: 0; }
+.header-brand-x { color: #646464; font-size: 18px; }
+.header-weex { display: flex; align-items: center; min-height: 44px; }
+.header-weex img { width: 103px; height: auto; }
+.header-weex:hover { opacity: .8; }
+.site-header nav { display: flex; align-items: center; gap: 28px; margin-left: auto; }
+.site-header nav a { color: #b8b8b8; font-size: 14px; white-space: nowrap; }
+.site-header nav a:hover, .site-header nav a[href="#weex"] { color: var(--yellow); }
+.header-tools { display: flex; align-items: center; gap: 20px; }
+.language-switch { display: flex; padding: 3px; border: 1px solid #2e2e2e; border-radius: 8px; }
+.language-switch button { padding: 6px 8px; border: 0; background: transparent; color: #999; font-size: 11px; border-radius: 5px; min-height: 30px; }
+.language-switch button[aria-pressed="true"] { color: #fff; background: #303030; }
+.nav-cta { font-size: 13px; min-height: 40px; padding: 8px 21px; gap: 10px; }
+.nav-cta .icon { display: none; }
+.menu-toggle { display: none; }
+#reading-progress { position: absolute; bottom: -1px; left: 0; height: 1px; width: 100%; background: var(--yellow); transform: scaleX(0); transform-origin: left; pointer-events: none; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, .8fr); gap: 84px; align-items: center; min-height: 526px; padding-block: 64px 72px; }
+.hero-copy .eyebrow { color: #b2b2b2; font-size: 15px; font-weight: 500; }
+.line-mark { display: none; }
+.hero h1 { font-size: clamp(38px, 4vw, 56px); line-height: 1.16; letter-spacing: -.035em; font-weight: 700; margin-top: 18px; }
+.hero h1 > span, .hero h1 > em { display: block; }
+.hero h1 > em { color: var(--yellow); font-style: normal; }
+.hero-description { max-width: 560px; margin-top: 23px; font-size: 16px; color: #a2a2a2; line-height: 1.7; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 30px; }
+.hero-actions .button { font-size: 15px; min-height: 50px; }
+.hero-partner { display: flex; align-items: center; gap: 13px; margin-top: 28px; }
+.hero-partner > span { font-size: 10px; color: #838383; }
+.hero-partner img { width: 72px; }
+.hero-partner i { width: 1px; height: 16px; background: #353535; }
+.hero-partner > span:last-child { font-size: 10px; color: #aaa; }
+.hero-art { width: 100%; max-width: 350px; justify-self: end; min-width: 0; }
+.identity-card { background: #111; border: 1px solid #272727; border-radius: var(--radius); overflow: hidden; }
+.identity-image { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.identity-bottom { display: flex; flex-direction: column; gap: 5px; padding: 17px 22px; border-top: 1px solid #252525; }
+.identity-bottom strong { font-size: 16px; }
+.identity-bottom > span { font-size: 11px; color: #989898; }
+.market-marquee { display: flex; min-height: 54px; border-block: 1px solid #232323; background: #0c0c0c; overflow: hidden; color: #a3a3a3; }
+.marquee-window { flex: 1; min-width: 0; overflow: hidden; }
+.marquee-track { display: flex; width: max-content; animation: market-scroll 44s linear infinite; }
+.marquee-group { display: flex; flex-shrink: 0; align-items: center; gap: 32px; padding: 17px 32px 17px 0; white-space: nowrap; font-size: 12px; }
+.marquee-group > b { font-size: 0; }
+.marquee-group > b::after { content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background: #686868; }
+.market-marquee:hover .marquee-track, .market-marquee:focus-within .marquee-track, .market-marquee.is-paused .marquee-track { animation-play-state: paused; }
+#motion-toggle { flex-shrink: 0; width: 112px; padding: 8px 12px; border: 0; border-left: 1px solid #242424; background: #0c0c0c; font-size: 10px; line-height: 1.5; color: #999; }
+#motion-toggle:hover { color: #fff; background: #191919; }
+@keyframes market-scroll { to { transform: translateX(-50%); } }
+h2 { font-size: 34px; line-height: 1.25; letter-spacing: -.025em; font-weight: 600; }
+h2 > span, h2 > em { display: block; }
+h2 > em { font-style: normal; color: inherit; }
+.section-light { background: #000; color: var(--text); }
+.section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 50px; margin-bottom: 36px; }
+.section-heading .eyebrow { margin-bottom: 13px; color: #888; font-size: 13px; font-weight: 400; }
+.heading-copy { max-width: 440px; color: #999; font-size: 15px; line-height: 1.7; }
+.heading-copy p + p { margin-top: 10px; }
+.weex-section { padding: 60px 0 64px; border-bottom: 1px solid #222; background: #000; }
+.weex-top { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-bottom: 21px; border-bottom: 1px solid #292929; }
+.weex-top .eyebrow { position: relative; font-size: 16px; }
+.weex-top .eyebrow::after { position: absolute; content: ''; height: 2px; width: 100%; background: var(--yellow); left: 0; bottom: -22px; }
+.weex-partner { display: flex; align-items: center; gap: 16px; }
+.weex-partner > span:first-child { font-size: 12px; font-weight: 600; }
+.partner-x { color: #777; font-size: 18px; }
+.weex-partner img { width: 92px; }
+.weex-hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 72px; padding-block: 36px 40px; }
+.offer-tag { display: inline-block; background: #ffe76214; color: var(--yellow); border-radius: 5px; padding: 5px 9px; font-size: 11px; }
+.weex-intro h2 { font-size: 36px; margin-top: 15px; }
+.weex-intro > p:not(.invite-code) { font-size: 15px; color: #999; margin-top: 17px; max-width: 480px; }
+.weex-intro > .button { margin-top: 23px; }
+.invite-code { color: #888; font-size: 11px; margin-top: 17px; }
+.invite-code strong { color: #ccc; font-size: 13px; margin-left: 9px; font-weight: 500; }
+.offer-display { position: relative; padding: 28px 32px; border: 1px solid #ffe76230; border-radius: var(--radius); background: linear-gradient(115deg, #1c1b14, #141414 80%); }
+.offer-up-to { display: block; color: #bbb; font-size: 13px; }
+.offer-number { display: inline-block; margin-top: 6px; font-size: clamp(54px, 5.8vw, 80px); line-height: 1.1; font-weight: 700; letter-spacing: -.04em; color: var(--yellow); }
+.offer-unit { display: inline-block; font-size: 20px; margin-left: 9px; font-weight: 500; color: var(--yellow); }
+.offer-display > p { margin-top: 16px; font-size: 13px; color: #c0c0c0; }
+.offer-rule { height: 1px; background: #323127; width: 100%; margin: 20px 0 15px; }
+.offer-display > small { display: block; color: #999; font-size: 12px; line-height: 1.65; }
+.reward-list-top { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 18px; }
+.reward-list-top h3 { font-size: 17px; line-height: 1.5; font-weight: 600; }
+.reward-list-top > span { font-size: 11px; color: #777; }
+.reward-list { display: grid; gap: 16px; list-style: none; padding: 0; margin: 0; }
+.reward-row { display: grid; grid-template-columns: 165px minmax(0, 1fr); align-items: center; gap: 28px; padding: 24px; background: var(--surface); border: 1px solid #1e1e1e; border-radius: var(--radius); }
+.reward-step { display: none; }
+.reward-amount { position: relative; display: flex; justify-content: center; flex-wrap: wrap; align-items: baseline; align-content: center; gap: 0 6px; padding: 16px 12px; min-height: 100px; border-radius: 12px; background: linear-gradient(120deg, #fff3c3, #e6ce84); color: #473514; }
+.reward-amount::before, .reward-amount::after { content: ''; position: absolute; top: calc(50% - 6px); width: 12px; height: 12px; background: var(--surface); border-radius: 50%; }
+.reward-amount::before { left: -6px; }.reward-amount::after { right: -6px; }
+.reward-amount > strong { font-size: 36px; font-weight: 700; line-height: 1.05; letter-spacing: -.035em; }
+.reward-amount > span { font-size: 11px; font-weight: 600; }
+.reward-amount > small { flex-basis: 100%; margin-top: 7px; font-size: 11px; line-height: 1.45; text-align: center; }
+.reward-task h3 { font-size: 17px; line-height: 1.5; font-weight: 600; }
+.reward-task p { font-size: 14px; color: #949494; margin-top: 8px; max-width: 780px; }
+.weex-bottom { display: flex; align-items: flex-start; justify-content: space-between; gap: 44px; margin-top: 24px; }
+.weex-bottom > p { color: #777; font-size: 12px; max-width: 800px; }
+.weex-bottom > .text-link { flex-shrink: 0; color: var(--yellow); font-size: 13px; padding-top: 4px; }
+.source-note { color: #747474; font-size: 11px; margin-top: 14px; }
+.approach { padding: 76px 0 40px; }
+.method-grid { display: grid; grid-template-columns: .8fr 1fr; align-items: start; gap: 36px; }
+.method-tabs { display: flex; flex-direction: column; gap: 10px; }
+.method-tabs button { display: flex; align-items: center; gap: 17px; padding: 23px 20px; border-radius: 12px; border: 1px solid #232323; background: #080808; color: #999; text-align: left; transition: background .2s, border-color .2s, color .2s; }
+.method-tabs button:hover { color: #fff; background: #141414; }
+.method-tabs button[aria-selected="true"] { color: #fff; background: #171717; border-color: #68603b; }
+.method-tabs button > span:first-child { font-size: 12px; color: #777; }
+.method-tabs button[aria-selected="true"] > span:first-child { color: var(--yellow); }
+.method-tabs button > span:nth-child(2) { font-size: 17px; font-weight: 500; line-height: 1.5; }
+.method-tab-arrow { margin-left: auto; opacity: 0; font-size: 20px; color: var(--yellow); }
+.method-tabs button[aria-selected="true"] .method-tab-arrow { opacity: 1; }
+.method-visual { min-width: 0; border: 1px solid #272727; background: var(--surface); border-radius: var(--radius); overflow: hidden; }
+.chart-top { display: flex; justify-content: space-between; gap: 16px; padding: 18px 22px; border-bottom: 1px solid #282828; color: #aaa; font-size: 10px; }
+.chart-top > span:last-child { color: #8a8a8a; }
+.chart-frame { position: relative; margin: 12px 20px 0; }
+.structure-chart { width: 100%; height: auto; display: block; }
+.zone { fill: #ffe762; opacity: 0; transition: opacity .3s; }
+.chart-line { fill: none; stroke: #b5b5b5; stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; }
+.scenario-line, .invalidation-line { fill: none; stroke: var(--yellow); stroke-width: 2; stroke-dasharray: 5 7; opacity: .2; transition: opacity .3s; }
+.invalidation-line { stroke: #969696; opacity: 0; }
+.chart-point { fill: #151515; stroke: var(--yellow); stroke-width: 2; }
+.level { stroke: #707070; stroke-width: 1; stroke-dasharray: 5 7; opacity: .6; }
+.chart-tag { position: absolute; right: 0; padding: 3px 6px; background: #141414; color: #888; font-size: 9px; }
+.tag-liquidity { top: 18%; }.tag-invalidation { top: 79%; }
+.method-visual[data-active="02"] .zone-liquidity { opacity: .15; }
+.method-visual[data-active="03"] .scenario-line { opacity: 1; }
+.method-visual[data-active="03"] .invalidation-line { opacity: .65; }
+.method-visual[data-active="04"] .zone-risk { opacity: .1; }
+.method-visual[data-active="04"] .invalidation-line { opacity: 1; }
+.method-panels { padding: 20px 25px 0; min-height: 175px; }
+.method-panels h3 { font-size: 21px; line-height: 1.4; }
+.method-panels p { color: #999; font-size: 14px; margin-top: 11px; }
+.method-note { display: block; padding-left: 10px; border-left: 2px solid #655d37; color: #a3a3a3; font-size: 12px; margin-top: 15px; }
+.chart-disclaimer { color: #8a8a8a; font-size: 11px; line-height: 1.65; padding: 22px 25px; }
+.programs { padding: 36px 0 76px; border-bottom: 1px solid #222; }
+.programs .heading-copy { max-width: 390px; }
+.service-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.service-card { display: flex; flex-direction: column; min-width: 0; border-radius: var(--radius); border: 1px solid #262626; background: var(--surface); padding: 28px; }
+.service-card.vip { border-color: #6a6035; }
+.service-top { display: flex; align-items: center; gap: 9px; color: #999; font-size: 10px; line-height: 1.5; }
+.service-top > span:first-child { display: none; }
+.service-top .icon { margin-left: auto; color: var(--yellow); width: 25px; height: 25px; }
+.service-card h3 { font-size: 23px; line-height: 1.35; letter-spacing: -.02em; margin-top: 22px; min-height: 63px; }
+.service-card > p { font-size: 14px; color: #999; margin-top: 15px; min-height: 95px; }
+.service-card ul { display: flex; flex-direction: column; gap: 12px; list-style: none; padding: 0; margin: 24px 0 27px; }
+.service-card li { display: flex; align-items: flex-start; gap: 10px; color: #aaa; font-size: 13px; line-height: 1.65; }
+.service-card li .icon { width: 15px; height: 15px; margin-top: 3px; color: #777; }
+.service-card .button { margin-top: auto; font-size: 13px; padding: 11px 16px; gap: 10px; min-height: 45px; justify-content: space-between; }
+.service-card .button .icon { width: 17px; height: 17px; }
+.services-note { color: #777; font-size: 12px; margin-top: 20px; }
+.community-section { padding: 70px 0; }
+.community-top { max-width: 100%; text-align: center; border: 1px solid #282828; border-radius: 20px; background: #121212; padding: 44px 24px; }
+.community-mark { width: 48px; height: 48px; display: grid; place-items: center; margin: 0 auto 15px; border-radius: 50%; background: #2b291b; color: var(--yellow); }
+.community-mark .icon { width: 24px; height: 24px; }
+.community-top .eyebrow { color: #888; font-size: 12px; margin-bottom: 16px; font-weight: 400; }
+.community-top h2 { font-size: 34px; }
+.community-top > p:not(.eyebrow) { max-width: 530px; margin: 20px auto 0; font-size: 15px; color: #999; }
+.community-top > .button { margin-top: 26px; }
+.faq-block { display: grid; grid-template-columns: .6fr 1fr; gap: 64px; margin-top: 54px; }
+.faq-block > .eyebrow { padding-top: 21px; color: #ccc; font-size: 16px; }
+.faqs details { border-bottom: 1px solid #292929; }
+.faqs summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; font-size: 15px; font-weight: 500; cursor: pointer; }
+.faqs summary::-webkit-details-marker { display: none; }
+.faqs summary > span:last-child { color: #aaa; font-size: 24px; font-weight: 400; }
+.faqs details[open] summary > span:last-child { transform: rotate(45deg); }
+.faqs details > p { padding: 0 24px 22px 0; font-size: 14px; color: #999; }
+footer { border-top: 1px solid #252525; padding-top: 35px; background: #050505; }
+.footer-main { display: flex; justify-content: space-between; align-items: center; gap: 35px; padding-bottom: 30px; }
+.footer-main .brand-name { font-size: 15px; }
+.footer-links { display: flex; gap: 12px; }
+.footer-social { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 18px; background: #111; border: 1px solid #292929; border-radius: 10px; font-size: 12px; color: #ccc; }
+.footer-social .icon { width: 20px; height: 20px; color: var(--yellow); }
+.footer-social:hover { background: #1d1d1d; border-color: #555; }
+.footer-risk { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; border-top: 1px solid #232323; padding-top: 22px; }
+.footer-risk p { font-size: 11px; color: #777; line-height: 1.8; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding: 27px 0; color: #6f6f6f; font-size: 10px; }
+.footer-bottom a { color: #aaa; }
+#mobile-cta { display: none; }
+.js .reveal { opacity: 0; transform: translateY(10px); transition: opacity .4s var(--ease), transform .4s var(--ease); }
+.js .reveal.is-visible { opacity: 1; transform: none; }
+@media(max-width:1199px) {
+  .wrap { width: calc(100% - 64px); }
+  .nav-shell { width: calc(100% - 40px); gap: 24px; }
+  .header-brand-lockup { gap: 12px; }.brand-name { font-size: 15px; }.header-weex img { width: 88px; }
+  .site-header nav { gap: 20px; }.site-header nav a { font-size: 13px; }.header-tools { gap: 16px; }
+  .hero { gap: 52px; padding-block: 55px; min-height: 490px; }.hero h1 { font-size: 45px; }.hero-art { max-width: 315px; }
+  .hero-actions .button { font-size: 14px; padding-inline: 21px; }
+  .weex-hero { gap: 50px; }.weex-intro h2 { font-size: 32px; }.offer-display { padding: 26px; }.offer-number { font-size: 65px; }.offer-unit { font-size: 18px; }
+  .service-card { padding: 23px; }.service-card h3 { font-size: 22px; }.service-card > p { min-height: 110px; }.service-card .button { font-size: 12px; }
+  .footer-social { font-size: 11px; padding: 12px 14px; gap: 14px; }.footer-main { gap: 25px; }
+}
+@media(max-width:999px) {
+  .site-header { height: 68px; }.nav-shell { justify-content: space-between; }.header-tools { margin-left: auto; }
+  .menu-toggle { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 36px; height: 40px; border: 0; background: transparent; padding: 7px; }
+  .menu-toggle > span { width: 22px; height: 1.5px; background: #ddd; transition: transform .2s; }
+  .menu-toggle[aria-expanded="true"] > span:first-child { transform: translateY(3.75px) rotate(45deg); }.menu-toggle[aria-expanded="true"] > span:last-child { transform: translateY(-3.75px) rotate(-45deg); }
+  .site-header nav { display: none; position: absolute; top: 67px; left: 0; width: 100%; margin: 0; padding: 14px 32px; background: #111; border-bottom: 1px solid #333; flex-direction: column; align-items: stretch; gap: 0; }
+  .site-header nav.is-open { display: flex; }.site-header nav a { padding: 15px 0; font-size: 15px; }
+  .hero { gap: 36px; grid-template-columns: minmax(0,1.2fr) minmax(0,.8fr); min-height: 480px; }.hero h1 { font-size: 37px; }.hero-description { font-size: 15px; }.hero-copy .eyebrow { font-size: 13px; }
+  .hero-actions { gap: 10px; }.hero-actions .button { padding: 11px 17px; font-size: 12px; min-height: 45px; }.hero-actions .icon { width: 16px; height: 16px; }
+  .hero-partner { flex-wrap: wrap; margin-top: 23px; gap: 10px; }.hero-partner > span { font-size: 9px; }.hero-partner > span:last-child { flex-basis: 100%; font-size: 10px; }.hero-partner i { display: none; }
+  .identity-bottom { padding: 15px 17px; }.identity-bottom strong { font-size: 14px; }.identity-bottom > span { font-size: 10px; }
+  h2 { font-size: 30px; }.section-heading { gap: 35px; }.heading-copy { font-size: 14px; max-width: 360px; }
+  .weex-hero { gap: 32px; }.weex-intro h2 { font-size: 29px; }.weex-intro > p:not(.invite-code) { font-size: 14px; }.weex-intro .button { font-size: 13px; padding-inline: 20px; }
+  .offer-display { padding: 23px; }.offer-number { font-size: 56px; }.offer-unit { font-size: 17px; margin-left: 6px; }.offer-display > p { font-size: 12px; }.offer-display > small { font-size: 11px; }
+  .reward-row { grid-template-columns: 145px minmax(0,1fr); gap: 24px; }.reward-task h3 { font-size: 16px; }.reward-task p { font-size: 13px; }
+  .weex-bottom { flex-direction: column; gap: 16px; }.weex-bottom > p { font-size: 11px; }
+  .method-grid { grid-template-columns: .8fr 1fr; gap: 24px; }.method-tabs button { padding: 21px 17px; gap: 12px; }.method-tabs button > span:nth-child(2) { font-size: 15px; }
+  .method-panels { padding: 17px 20px 0; min-height: 195px; }.method-panels h3 { font-size: 20px; }.method-panels p { font-size: 13px; }.chart-top { padding: 15px; font-size: 8px; }.chart-disclaimer { padding: 20px; font-size: 10px; }.chart-tag { font-size: 7px; }
+  .service-grid { gap: 14px; }.service-card { padding: 21px 18px; }.service-card h3 { font-size: 21px; min-height: 85px; }.service-card > p { font-size: 13px; min-height: 130px; }.service-card li { font-size: 12px; gap: 8px; }.service-card .button { font-size: 11px; padding: 11px 13px; gap: 7px; }.service-top { font-size: 8px; }
+  .footer-main { align-items: flex-start; }.footer-links { flex-direction: column; min-width: 270px; }.footer-social { font-size: 12px; }
+}
+@media(max-width:700px) {
+  html { scroll-padding-top: 84px; }.wrap { width: calc(100% - 40px); }.nav-shell { width: calc(100% - 32px); gap: 14px; }
+  .announcement { font-size: 9px; padding: 8px 16px; gap: 7px; }.announcement a { margin-left: 5px; }
+  .site-header { height: 64px; }.header-brand-lockup { gap: 10px; }.site-header .brand-name { font-size: 12px; }.header-brand-x { font-size: 14px; }.header-weex img { width: 75px; }
+  .header-tools { gap: 10px; }.language-switch { padding: 2px; }.language-switch button { padding: 5px 6px; font-size: 10px; min-height: 28px; }.nav-cta { display: none; }.menu-toggle { width: 30px; height: 38px; padding: 4px; }
+  .site-header nav { top: 63px; padding: 12px 20px; }
+  .hero { display: flex; flex-direction: column; gap: 32px; align-items: stretch; padding-block: 36px 40px; min-height: 0; }
+  .hero-copy .eyebrow { font-size: 12px; }.hero h1 { font-size: clamp(32px,8.5vw,46px); margin-top: 16px; line-height: 1.2; letter-spacing: -.035em; }
+  .hero-description { font-size: 14px; margin-top: 19px; line-height: 1.75; }.hero-actions { gap: 10px; margin-top: 25px; }.hero-actions .button { font-size: 12px; padding: 12px 19px; min-height: 46px; }
+  .hero-partner { flex-wrap: nowrap; gap: 10px; margin-top: 23px; }.hero-partner > span, .hero-partner > span:last-child { font-size: 8px; flex-basis: auto; }.hero-partner img { width: 62px; }.hero-partner i { display: block; height: 12px; }
+  .hero-art { width: min(76%,285px); align-self: center; }.identity-bottom { padding: 14px 18px; }.identity-bottom strong { font-size: 13px; }.identity-bottom > span { font-size: 9px; }
+  .market-marquee { min-height: 48px; }.marquee-group { gap: 24px; padding: 15px 24px 15px 0; font-size: 10px; }#motion-toggle { width: 80px; font-size: 9px; }
+  h2 { font-size: 28px; }.section-heading { display: block; margin-bottom: 26px; }.section-heading .eyebrow { font-size: 12px; margin-bottom: 12px; }.heading-copy { font-size: 14px; max-width: 100%; margin-top: 20px; }
+  .weex-section { padding: 36px 0 42px; }.weex-top { padding-bottom: 18px; gap: 16px; }.weex-top .eyebrow { font-size: 13px; }.weex-top .eyebrow::after { bottom: -19px; }.weex-partner > span { display: none; }.weex-partner img { width: 72px; }
+  .weex-hero { display: flex; flex-direction: column; align-items: stretch; gap: 28px; padding-block: 27px 32px; }.offer-tag { font-size: 10px; }.weex-intro h2 { font-size: 29px; margin-top: 14px; }.weex-intro > p:not(.invite-code) { font-size: 14px; margin-top: 16px; }.weex-intro .button { font-size: 13px; min-height: 46px; margin-top: 22px; }.invite-code { font-size: 10px; margin-top: 15px; }
+  .offer-display { padding: 24px; }.offer-up-to { font-size: 12px; }.offer-number { font-size: clamp(54px,15vw,76px); }.offer-unit { font-size: 18px; margin-left: 8px; }.offer-display > p { font-size: 12px; }.offer-display > small { font-size: 11px; }.offer-rule { margin: 19px 0 14px; }
+  .reward-list-top { margin-bottom: 16px; }.reward-list-top h3 { font-size: 13px; }.reward-list-top > span { display: none; }.reward-list { gap: 12px; }.reward-row { grid-template-columns: 105px minmax(0,1fr); gap: 17px; padding: 18px 16px; align-items: center; border-radius: 14px; }
+  .reward-amount { min-height: 95px; padding: 14px 8px; gap: 0 4px; border-radius: 9px; }.reward-amount > strong { font-size: 32px; }.reward-amount > span { font-size: 9px; }.reward-amount > small { font-size: 9px; line-height: 1.5; }
+  .reward-task h3 { font-size: 14px; line-height: 1.45; }.reward-task p { font-size: 12px; line-height: 1.65; margin-top: 6px; overflow-wrap: anywhere; }.weex-bottom { margin-top: 21px; gap: 14px; }.weex-bottom > .text-link { font-size: 12px; }.source-note { font-size: 10px; }
+  .approach { padding: 46px 0 25px; }.method-grid { display: flex; flex-direction: column; gap: 24px; }.method-tabs { width: 100%; gap: 8px; }.method-tabs button { padding: 18px 17px; }.method-tabs button > span:nth-child(2) { font-size: 15px; }.method-visual { width: 100%; }.method-panels { min-height: 0; padding: 18px 20px 0; }.method-panels h3 { font-size: 21px; }.method-panels p { font-size: 13px; }.method-note { font-size: 11px; }.chart-disclaimer { font-size: 10px; }.chart-frame { margin-inline: 12px; }.chart-top { font-size: 8px; }
+  .programs { padding: 25px 0 45px; }.programs .heading-copy { max-width: 100%; }.service-grid { grid-template-columns: 1fr; gap: 16px; }.service-card { padding: 25px; }.service-top { font-size: 10px; }.service-card h3 { font-size: 24px; margin-top: 22px; min-height: 0; }.service-card > p { font-size: 14px; min-height: 0; margin-top: 15px; }.service-card li { font-size: 13px; }.service-card .button { font-size: 13px; padding: 12px 18px; }.services-note { font-size: 11px; margin-top: 18px; }
+  .community-section { padding: 42px 0 46px; }.community-top { padding: 32px 20px; border-radius: 16px; }.community-top .eyebrow { font-size: 10px; }.community-top h2 { font-size: 27px; }.community-top > p:not(.eyebrow) { font-size: 14px; margin-top: 18px; }.community-top > .button { font-size: 13px; padding-inline: 20px; }.faq-block { display: block; margin-top: 36px; }.faq-block > .eyebrow { font-size: 14px; padding-top: 0; margin-bottom: 8px; }.faqs summary { padding: 20px 0; font-size: 14px; gap: 16px; }.faqs details > p { font-size: 13px; padding-right: 0; }
+  footer { padding-top: 28px; }.footer-main { display: block; }.footer-links { min-width: 0; margin-top: 25px; display: grid; gap: 10px; }.footer-social { font-size: 13px; padding: 14px 17px; }.footer-risk { display: block; padding-top: 20px; }.footer-risk p { font-size: 10px; }.footer-risk p + p { margin-top: 15px; }.footer-bottom { font-size: 9px; padding: 24px 0 106px; }.footer-bottom > span:nth-child(2) { display: none; }
+  #mobile-cta { display: flex; position: fixed; z-index: 45; bottom: 0; left: 0; right: 0; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 20px max(12px,env(safe-area-inset-bottom)); border-top: 1px solid #363636; background: #121212f7; backdrop-filter: blur(14px); transform: translateY(110%); visibility: hidden; transition: transform .25s,visibility .25s; }
+  #mobile-cta.is-visible:not(.is-hidden) { visibility: visible; transform: none; }#mobile-cta > div > strong { display: block; font-size: 10px; }#mobile-cta > div > span { display: block; color: #888; font-size: 9px; margin-top: 4px; }#mobile-cta .button { font-size: 12px; min-height: 42px; padding: 10px 17px; gap: 9px; }#mobile-cta .icon { width: 16px; height: 16px; }
+}
+@media(max-width:359px) {
+  .wrap { width: calc(100% - 32px); }.announcement { font-size: 8px; }.nav-shell { gap: 8px; }.header-brand-lockup { gap: 8px; }.site-header .brand-name { font-size: 10px; }.header-weex img { width: 61px; }.header-tools { gap: 8px; }.header-brand-x { font-size: 12px; }.language-switch button { font-size: 9px; padding: 5px; }
+  .hero h1 { font-size: 32px; }.hero-actions { gap: 8px; }.hero-actions .button { font-size: 11px; padding: 12px 15px; gap: 9px; }.hero-partner { gap: 8px; }.hero-partner > span,.hero-partner > span:last-child { font-size: 7px; }.hero-partner img { width: 53px; }
+  .weex-top .eyebrow { font-size: 11px; }.weex-partner img { width: 64px; }.offer-display { padding: 22px; }.offer-number { font-size: 52px; }.offer-unit { font-size: 16px; margin-left: 6px; }.reward-row { grid-template-columns: 91px minmax(0,1fr); padding: 16px 13px; gap: 14px; }.reward-amount > strong { font-size: 29px; }.reward-amount > span { font-size: 8px; }.reward-amount > small { font-size: 8px; }.reward-task h3 { font-size: 13px; }.reward-task p { font-size: 11px; }
+  .community-top { padding-inline: 16px; }.community-top h2 { font-size: 24px; }.community-top > .button { font-size: 12px; padding-inline: 16px; }#mobile-cta { padding-inline: 16px; }#mobile-cta > div > strong { font-size: 8px; }#mobile-cta > div > span { font-size: 8px; }#mobile-cta .button { font-size: 11px; padding-inline: 13px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior: auto; }*,*::before,*::after { animation: none !important; transition: none !important; }.js .reveal { opacity: 1; transform: none; }
+}
+@media print {
+  .site-header,.announcement,.market-marquee,#mobile-cta { display: none !important; }.wrap { width: 100%; }.js .reveal { opacity: 1; transform: none; }body { print-color-adjust: exact; }.footer-bottom { padding-bottom: 20px; }
+}
+</style></head><body><svg class="symbol-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
 <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
 <symbol id="i-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
@@ -8,8 +306,620 @@
 <symbol id="i-telegram" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M21.9 3.4 18.7 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.3L6.2 13.7l-4.8-1.5c-1-.3-1-1 .2-1.4L20.4 3c.9-.3 1.7.2 1.5.4Z"/></symbol>
 </defs></svg><a class="skip-link" href="#main"><span data-i18n="skip" >Перейти к содержимому</span></a>
 <div class="announcement"><span class="small-dot"></span><span data-i18n="announcement" >Яснее видеть рынок. Развиваться вместе с сообществом.</span><a href="#weex">WEEX <span aria-hidden="true">↗</span></a></div>
-<header class="site-header"><div class="wrap nav-shell"><div class="header-brand-lockup"><a class="brand" href="#home" aria-label="Главная страница Яна Вербина" data-i18n-aria="aria.home"><span class="brand-monogram" aria-hidden="true">YV<span>↗</span></span><span class="brand-name">YAN VERBIN<small><span data-i18n="brand.community" >СООБЩЕСТВО ТРЕЙДЕРОВ</span></small></span></a><span class="header-brand-x" aria-hidden="true">×</span><a class="header-weex" href="#weex" aria-label="Награды WEEX" data-i18n-aria="nav.rewards"><img src="assets/weex-logo-yellow.png" alt="WEEX" width="110" height="29"></a></div><nav id="site-nav" aria-label="Основная навигация" data-i18n-aria="aria.mainNav"><a href="#approach"><span data-i18n="nav.approach" >Подход</span></a><a href="#programs"><span data-i18n="nav.programs" >Форматы</span></a><a href="#weex"><span data-i18n="nav.rewards" >Награды WEEX</span></a></nav><div class="header-tools"><div class="language-switch" role="group" aria-label="Выбрать язык" data-i18n-aria="aria.languages"><button data-lang="en" aria-pressed="false" lang="en">EN</button><button data-lang="ru" aria-pressed="true" lang="ru">RU</button></div><a class="button button-white nav-cta" href="https://www.weex.com/register?from=https%3A%2F%2Fwww.weex.com%2Fevents%2Fwelcome-event%3FvipCode%3Dsyd0&amp;vipCode=syd0" data-link="register" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.register" >Регистрация</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню"><span></span><span></span></button></div></div><div id="reading-progress" aria-hidden="true"></div></header><main id="main"><section id="home" class="hero wrap">
-<div class="hero-copy"><p class="eyebrow"><span class="line-mark"></span><span data-i18n="hero.kicker" >YAN VERBIN × WEEX</span></p><h1><span data-i18n="hero.title1">Понимайте рынок.</span><em data-i18n="hero.title2">Торгуйте по плану.</em></h1><p data-i18n="hero.description" class="hero-description">Структура рынка. Ликвидность. Чёткие сценарии. Разбирайте с Яном Вербиным логику торговых решений и дисциплину, на которой они строятся.</p><div class="hero-actions"><a class="button button-white" href="https://www.weex.com/register?from=https%3A%2F%2Fwww.weex.com%2Fevents%2Fwelcome-event%3FvipCode%3Dsyd0&amp;vipCode=syd0" data-link="register" target="_blank" rel="noopener noreferrer"><span data-i18n="hero.weex" >Начать на WEEX</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="button button-outline" href="https://t.me/+JQRJCw2XdHI0MGFi" data-link="telegram" target="_blank" rel="noopener noreferrer"><span data-i18n="hero.telegram" >Перейти в канал</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></div><div class="hero-partner"><span><span data-i18n="hero.partner" >БИРЖА-ПАРТНЁР</span></span><img src="assets/weex-logo-yellow.png" alt="WEEX" width="110" height="29"><i></i><span><span data-i18n="hero.markets" >BTC / ETH / SOL И ДРУГИЕ</span></span></div></div>
-<div class="hero-art"><div class="identity-card"><img class="identity-image" src="assets/yan-verbin.jpg" alt="Yan Verbin Community" width="640" height="640" fetchpriority="high"><div class="identity-bottom"><strong>YAN VERBIN</strong><span data-i18n="identity.role">ТРЕЙДЕР · АВТОР СООБЩЕСТВА</span></div></div></div></section><div class="market-marquee"><div class="marquee-window"><div class="marquee-track"><div class="marquee-group"><span><span data-i18n="ticker.btc" >BTC</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.eth" >ETH</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.sol" >SOL</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.structure" >СТРУКТУРА РЫНКА</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.liquidity" >ЛИКВИДНОСТЬ</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.risk" >СНАЧАЛА РИСК</span></span><b aria-hidden="true">✳</b></div><div class="marquee-group" aria-hidden="true"><span><span data-i18n="ticker.btc" >BTC</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.eth" >ETH</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.sol" >SOL</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.structure" >СТРУКТУРА РЫНКА</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.liquidity" >ЛИКВИДНОСТЬ</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.risk" >СНАЧАЛА РИСК</span></span><b aria-hidden="true">✳</b></div></div></div><button id="motion-toggle" aria-pressed="false">Остановить анимацию</button></div><section id="weex" class="weex-section"><div class="wrap"><div class="weex-top"><p class="eyebrow"><span data-i18n="weex.kicker" >Приветственная акция WEEX</span></p><div class="weex-partner"><span>YAN VERBIN</span><span class="partner-x">×</span><img src="assets/weex-logo-yellow.png" alt="WEEX" width="118" height="31"></div></div><div class="weex-hero reveal"><div class="weex-intro"><span class="offer-tag"><span data-i18n="weex.tag" >НАГРАДЫ НОВЫМ ПОЛЬЗОВАТЕЛЯМ</span></span><h2><span data-i18n="weex.title1" >Награды</span><em data-i18n="weex.title2" >для новых пользователей</em></h2><p data-i18n="weex.description" >Откройте приветственную акцию по приглашению Яна. Изучите задания, выберите следующий шаг и учитывайте собственные ограничения по риску.</p><a class="button button-white" href="https://www.weex.com/events/welcome-event?vipCode=syd0" data-link="weex" target="_blank" rel="noopener noreferrer"><span data-i18n="weex.join" >Перейти к акции</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><p class="invite-code"><span data-i18n="weex.code" >КОД ПРИГЛАШЕНИЯ</span> <strong>syd0</strong></p></div><div class="offer-display"><span class="offer-up-to"><span data-i18n="weex.upTo" >ПОЛУЧИТЕ ДО</span></span><strong class="offer-number">10,000</strong><span class="offer-unit">USDT</span><p><span data-i18n="weex.rewardKinds" >Купоны · Бонусные средства · Аирдропы позиций</span></p><div class="offer-rule"></div><small><span data-i18n="weex.limit" >Максимум, заявленный WEEX. Действуют требования к участникам и условия заданий; награды не гарантируют денежную выплату.</span></small></div></div><div class="reward-list-top"><h3><span data-i18n="weex.tasks" >НАЧНИТЕ С ЭТИХ ЗАДАНИЙ</span></h3><span><span data-i18n="weex.tasksNote" >НЕКОТОРЫЕ ПРИВЕТСТВЕННЫЕ НАГРАДЫ</span></span></div><ol class="reward-list"><li class="reward-row"><span class="reward-step">01</span><div class="reward-amount"><strong>10</strong><span>USDT</span><small data-i18n="reward.0.type" >Купон</small></div><div class="reward-task"><h3 data-i18n="reward.0.title" >Создайте аккаунт</h3><p data-i18n="reward.0.description" >Зарегистрируйтесь на WEEX по пригласительной ссылке Яна.</p></div></li><li class="reward-row"><span class="reward-step">02</span><div class="reward-amount"><strong>10</strong><span>USDT</span><small data-i18n="reward.1.type" >Бонусные средства</small></div><div class="reward-task"><h3 data-i18n="reward.1.title" >Пополните счёт по условиям акции</h3><p data-i18n="reward.1.description" >Чистое пополнение ≥ 100 USDT с удержанием средств 3 дня подряд.</p></div></li><li class="reward-row"><span class="reward-step">03</span><div class="reward-amount"><strong>200</strong><span>USDT · 20×</span><small data-i18n="reward.2.type" >Аирдроп позиции</small></div><div class="reward-task"><h3 data-i18n="reward.2.title" >Совершите первую фьючерсную сделку</h3><p data-i18n="reward.2.description" >Первая фьючерсная сделка на сумму ≥ 2 000 USDT. Награда — позиция с кредитным плечом, а не денежная выплата.</p></div></li><li class="reward-row"><span class="reward-step">04</span><div class="reward-amount"><strong>10</strong><span>USDT</span><small data-i18n="reward.3.type" >Купон</small></div><div class="reward-task"><h3 data-i18n="reward.3.title" >Войдите в приложение</h3><p data-i18n="reward.3.description" >Получите купон за первый вход в приложение WEEX.</p></div></li></ol><div class="weex-bottom"><p><span data-i18n="weex.conditions" >Доступность заданий, подходящие рынки, верификация, региональные ограничения и сроки действия наград определяются WEEX. Купоны и бонусные средства нельзя вывести как деньги. Номинальная стоимость позиции отличается от суммы бонусной маржи.</span></p><a class="text-link" href="https://www.weex.com/events/welcome-event?vipCode=syd0" data-link="weex" target="_blank" rel="noopener noreferrer"><span data-i18n="weex.all" >Все задания и полные условия</span><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a></div><p class="source-note"><span data-i18n="weex.source" >Официальная страница акции проверена 28 сентября 2026 года. Предложения могут меняться.</span></p></div></section><section id="approach" class="approach section-light"><div class="wrap"><div class="section-heading reveal"><div><p class="eyebrow"><span data-i18n="approach.kicker" >Подход к трейдингу</span></p><h2><span data-i18n="approach.title1" >Мой подход</span><em data-i18n="approach.title2" >к рынку</em></h2></div><div class="heading-copy"><p data-i18n="approach.intro" >Я Ян Вербин, трейдер и создатель сообщества криптотрейдеров. В центре моего внимания — BTC, ETH, SOL и другие ликвидные активы.</p><p data-i18n="approach.intro2" >Я делюсь своим взглядом на рынок, торговыми сетапами и обновлениями, открыто показывая, как принимаю решения.</p></div></div>
+<header class="site-header"><div class="wrap nav-shell"><div class="header-brand-lockup"><a class="brand" href="#home" aria-label="Главная страница Яна Вербина" data-i18n-aria="aria.home"><span class="brand-monogram" aria-hidden="true">YV<span>↗</span></span><span class="brand-name">YAN VERBIN<small><span data-i18n="brand.community" >СООБЩЕСТВО ТРЕЙДЕРОВ</span></small></span></a><span class="header-brand-x" aria-hidden="true">×</span><a class="header-weex" href="#weex" aria-label="Награды WEEX" data-i18n-aria="nav.rewards"><img src="data:image/png;base64,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" alt="WEEX" width="110" height="29"></a></div><nav id="site-nav" aria-label="Основная навигация" data-i18n-aria="aria.mainNav"><a href="#approach"><span data-i18n="nav.approach" >Подход</span></a><a href="#programs"><span data-i18n="nav.programs" >Форматы</span></a><a href="#weex"><span data-i18n="nav.rewards" >Награды WEEX</span></a></nav><div class="header-tools"><div class="language-switch" role="group" aria-label="Выбрать язык" data-i18n-aria="aria.languages"><button data-lang="en" aria-pressed="false" lang="en">EN</button><button data-lang="ru" aria-pressed="true" lang="ru">RU</button></div><a class="button button-white nav-cta" href="https://www.weex.com/register?from=https%3A%2F%2Fwww.weex.com%2Fevents%2Fwelcome-event%3FvipCode%3Dsyd0&amp;vipCode=syd0" data-link="register" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.register" >Регистрация</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню"><span></span><span></span></button></div></div><div id="reading-progress" aria-hidden="true"></div></header><main id="main"><section id="home" class="hero wrap">
+<div class="hero-copy"><p class="eyebrow"><span class="line-mark"></span><span data-i18n="hero.kicker" >YAN VERBIN × WEEX</span></p><h1><span data-i18n="hero.title1">Понимайте рынок.</span><em data-i18n="hero.title2">Торгуйте по плану.</em></h1><p data-i18n="hero.description" class="hero-description">Структура рынка. Ликвидность. Чёткие сценарии. Разбирайте с Яном Вербиным логику торговых решений и дисциплину, на которой они строятся.</p><div class="hero-actions"><a class="button button-white" href="https://www.weex.com/register?from=https%3A%2F%2Fwww.weex.com%2Fevents%2Fwelcome-event%3FvipCode%3Dsyd0&amp;vipCode=syd0" data-link="register" target="_blank" rel="noopener noreferrer"><span data-i18n="hero.weex" >Начать на WEEX</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="button button-outline" href="https://t.me/+JQRJCw2XdHI0MGFi" data-link="telegram" target="_blank" rel="noopener noreferrer"><span data-i18n="hero.telegram" >Перейти в канал</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></div><div class="hero-partner"><span><span data-i18n="hero.partner" >БИРЖА-ПАРТНЁР</span></span><img src="data:image/png;base64,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" alt="WEEX" width="110" height="29"><i></i><span><span data-i18n="hero.markets" >BTC / ETH / SOL И ДРУГИЕ</span></span></div></div>
+<div class="hero-art"><div class="identity-card"><img class="identity-image" src="data:image/jpeg;base64,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hLFJRSjvXvRYzTk2zg67pQ0PXa9gKnpG0i3ldG4IB98Fez4uvtBp31q3UtKq3Vb6rT5alOs5oDc4gHz96+e3NzXvLh9zcVHVatQlz3uMknxXet4615rWj09IhoAE0WnA9iZMc3p8pb70WM4qzobo0n3VR1CmadIvJYwmS1s4BPdei0B4HB3EIO5bR/rOXR6jqNxqt/UvLotNWpAcWtDRgADHkAra6lc2llc2VJzRSuw0VQWgk8pMb+a2zi5RS77GuMknZw+qIi3GoIiIAiIgIqiIUIpuqhAiIhQoqogEIiIAiKFAZKIkoCqIiAKqIgEIiqAiqIgCIiECIiAIp0VQAJCAogCSiIAiIgCIiAIiKgFERQBERUBERQBElEARNkVAREUAREVAREUAREQBESUAQoiAImyIAiIgCFEQBETogCIiAIiIAiIgCIioCIooCoiIAoiIUqhKqIAiIgCiIgCIiAIoqgCJKIAiIgCIiAIiICoiIAiIgCIiECIiAIogQpYUKqIQIiIAiIgCIiAFERAEREAREQBERAPNElFQAiIgCIiAIiIAiIoAiBEAREQBEQIAiIqAiIgCBEUAREQBERAEREAREQBERChRVEBEREBUUVQBEUQBERAVRVQoCIVUQEVREAREQBERAVREQBERAFUUQFRREBUUQICqBVEIJREQBERAQKoiAIiFAEREAREQBERAJREQBJREAREVARE3UAREQBERAElEQBERAEREAREVAREQBERQEVREAREQBERAEURClREQBEUQBERAFVEQFRRVARERAEREARFEBURVARESUAREQBERAEREAVUVQElFVEARFUAREQgRFEKEREBUREIESFAgKiIgCIpCAqIiAIiKgIiKAIiIBKIiAIiIAiIgCSiiAqIiAIiIAiIgCIiAIiICKqQqgIqiIUIiiAqKIgKiIgIiqiAIiqAiIiAIqogCIiAIiIAiIgP/2Q==" alt="Yan Verbin Community" width="640" height="640" fetchpriority="high"><div class="identity-bottom"><strong>YAN VERBIN</strong><span data-i18n="identity.role">ТРЕЙДЕР · АВТОР СООБЩЕСТВА</span></div></div></div></section><div class="market-marquee"><div class="marquee-window"><div class="marquee-track"><div class="marquee-group"><span><span data-i18n="ticker.btc" >BTC</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.eth" >ETH</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.sol" >SOL</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.structure" >СТРУКТУРА РЫНКА</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.liquidity" >ЛИКВИДНОСТЬ</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.risk" >СНАЧАЛА РИСК</span></span><b aria-hidden="true">✳</b></div><div class="marquee-group" aria-hidden="true"><span><span data-i18n="ticker.btc" >BTC</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.eth" >ETH</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.sol" >SOL</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.structure" >СТРУКТУРА РЫНКА</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.liquidity" >ЛИКВИДНОСТЬ</span></span><b aria-hidden="true">✳</b><span><span data-i18n="ticker.risk" >СНАЧАЛА РИСК</span></span><b aria-hidden="true">✳</b></div></div></div><button id="motion-toggle" aria-pressed="false">Остановить анимацию</button></div><section id="weex" class="weex-section"><div class="wrap"><div class="weex-top"><p class="eyebrow"><span data-i18n="weex.kicker" >Приветственная акция WEEX</span></p><div class="weex-partner"><span>YAN VERBIN</span><span class="partner-x">×</span><img src="data:image/png;base64,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" alt="WEEX" width="118" height="31"></div></div><div class="weex-hero reveal"><div class="weex-intro"><span class="offer-tag"><span data-i18n="weex.tag" >НАГРАДЫ НОВЫМ ПОЛЬЗОВАТЕЛЯМ</span></span><h2><span data-i18n="weex.title1" >Награды</span><em data-i18n="weex.title2" >для новых пользователей</em></h2><p data-i18n="weex.description" >Откройте приветственную акцию по приглашению Яна. Изучите задания, выберите следующий шаг и учитывайте собственные ограничения по риску.</p><a class="button button-white" href="https://www.weex.com/events/welcome-event?vipCode=syd0" data-link="weex" target="_blank" rel="noopener noreferrer"><span data-i18n="weex.join" >Перейти к акции</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><p class="invite-code"><span data-i18n="weex.code" >КОД ПРИГЛАШЕНИЯ</span> <strong>syd0</strong></p></div><div class="offer-display"><span class="offer-up-to"><span data-i18n="weex.upTo" >ПОЛУЧИТЕ ДО</span></span><strong class="offer-number">10,000</strong><span class="offer-unit">USDT</span><p><span data-i18n="weex.rewardKinds" >Купоны · Бонусные средства · Аирдропы позиций</span></p><div class="offer-rule"></div><small><span data-i18n="weex.limit" >Максимум, заявленный WEEX. Действуют требования к участникам и условия заданий; награды не гарантируют денежную выплату.</span></small></div></div><div class="reward-list-top"><h3><span data-i18n="weex.tasks" >НАЧНИТЕ С ЭТИХ ЗАДАНИЙ</span></h3><span><span data-i18n="weex.tasksNote" >НЕКОТОРЫЕ ПРИВЕТСТВЕННЫЕ НАГРАДЫ</span></span></div><ol class="reward-list"><li class="reward-row"><span class="reward-step">01</span><div class="reward-amount"><strong>10</strong><span>USDT</span><small data-i18n="reward.0.type" >Купон</small></div><div class="reward-task"><h3 data-i18n="reward.0.title" >Создайте аккаунт</h3><p data-i18n="reward.0.description" >Зарегистрируйтесь на WEEX по пригласительной ссылке Яна.</p></div></li><li class="reward-row"><span class="reward-step">02</span><div class="reward-amount"><strong>10</strong><span>USDT</span><small data-i18n="reward.1.type" >Бонусные средства</small></div><div class="reward-task"><h3 data-i18n="reward.1.title" >Пополните счёт по условиям акции</h3><p data-i18n="reward.1.description" >Чистое пополнение ≥ 100 USDT с удержанием средств 3 дня подряд.</p></div></li><li class="reward-row"><span class="reward-step">03</span><div class="reward-amount"><strong>200</strong><span>USDT · 20×</span><small data-i18n="reward.2.type" >Аирдроп позиции</small></div><div class="reward-task"><h3 data-i18n="reward.2.title" >Совершите первую фьючерсную сделку</h3><p data-i18n="reward.2.description" >Первая фьючерсная сделка на сумму ≥ 2 000 USDT. Награда — позиция с кредитным плечом, а не денежная выплата.</p></div></li><li class="reward-row"><span class="reward-step">04</span><div class="reward-amount"><strong>10</strong><span>USDT</span><small data-i18n="reward.3.type" >Купон</small></div><div class="reward-task"><h3 data-i18n="reward.3.title" >Войдите в приложение</h3><p data-i18n="reward.3.description" >Получите купон за первый вход в приложение WEEX.</p></div></li></ol><div class="weex-bottom"><p><span data-i18n="weex.conditions" >Доступность заданий, подходящие рынки, верификация, региональные ограничения и сроки действия наград определяются WEEX. Купоны и бонусные средства нельзя вывести как деньги. Номинальная стоимость позиции отличается от суммы бонусной маржи.</span></p><a class="text-link" href="https://www.weex.com/events/welcome-event?vipCode=syd0" data-link="weex" target="_blank" rel="noopener noreferrer"><span data-i18n="weex.all" >Все задания и полные условия</span><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a></div><p class="source-note"><span data-i18n="weex.source" >Официальная страница акции проверена 28 сентября 2026 года. Предложения могут меняться.</span></p></div></section><section id="approach" class="approach section-light"><div class="wrap"><div class="section-heading reveal"><div><p class="eyebrow"><span data-i18n="approach.kicker" >Подход к трейдингу</span></p><h2><span data-i18n="approach.title1" >Мой подход</span><em data-i18n="approach.title2" >к рынку</em></h2></div><div class="heading-copy"><p data-i18n="approach.intro" >Я Ян Вербин, трейдер и создатель сообщества криптотрейдеров. В центре моего внимания — BTC, ETH, SOL и другие ликвидные активы.</p><p data-i18n="approach.intro2" >Я делюсь своим взглядом на рынок, торговыми сетапами и обновлениями, открыто показывая, как принимаю решения.</p></div></div>
 <div class="method-grid"><div class="method-tabs reveal" role="tablist" aria-orientation="vertical" aria-label="Изучить торговый процесс" data-i18n-aria="aria.methodTabs"><button id="method-tab-01" data-method="01" role="tab" aria-selected="true" aria-controls="method-01" tabindex="0"><span>01</span><span data-i18n="method.01.tab" >Изучить структуру.</span><span class="method-tab-arrow" aria-hidden="true">↗</span></button><button id="method-tab-02" data-method="02" role="tab" aria-selected="false" aria-controls="method-02" tabindex="-1"><span>02</span><span data-i18n="method.02.tab" >Найти ликвидность.</span><span class="method-tab-arrow" aria-hidden="true">↗</span></button><button id="method-tab-03" data-method="03" role="tab" aria-selected="false" aria-controls="method-03" tabindex="-1"><span>03</span><span data-i18n="method.03.tab" >Построить сценарий.</span><span class="method-tab-arrow" aria-hidden="true">↗</span></button><button id="method-tab-04" data-method="04" role="tab" aria-selected="false" aria-controls="method-04" tabindex="-1"><span>04</span><span data-i18n="method.04.tab" >Оценить риск.</span><span class="method-tab-arrow" aria-hidden="true">↗</span></button></div><div class="method-visual reveal" data-active="01"><div class="chart-top"><span><span data-i18n="chart.label" >АНАТОМИЯ СЦЕНАРИЯ</span></span><span>YV / FRAMEWORK</span></div><div class="chart-frame"><svg class="structure-chart" viewBox="0 0 560 300" aria-hidden="true"><defs><pattern id="chart-grid" width="56" height="50" patternUnits="userSpaceOnUse"><path d="M56 0H0v50" fill="none" stroke="#292929" stroke-width=".6"/></pattern></defs><rect width="560" height="300" fill="url(#chart-grid)"/><rect class="zone zone-liquidity" x="22" y="67" width="516" height="34" rx="3"/><rect class="zone zone-risk" x="22" y="234" width="516" height="27" rx="3"/><path class="chart-line" d="M15 242 42 227 65 235 93 195 116 211 144 165 166 177 190 134 215 153 241 108 266 139 290 95 315 115 340 74 365 91 391 59 415 88 440 111 461 98 484 134"/><path class="scenario-line" d="m484 134 20-29 15 10 22-47"/><path class="invalidation-line" d="m484 134 19 34 16-8 25 80"/><circle class="chart-point" cx="484" cy="134" r="6"/><line class="level level-top" x1="22" y1="68" x2="538" y2="68"/><line class="level level-bottom" x1="22" y1="247" x2="538" y2="247"/></svg><span class="chart-tag tag-liquidity"><span data-i18n="chart.liquidity" >ЗОНА ЛИКВИДНОСТИ</span></span><span class="chart-tag tag-invalidation"><span data-i18n="chart.invalidation" >ОТМЕНА СЦЕНАРИЯ</span></span></div><div class="method-panels"><div id="method-01" role="tabpanel" aria-labelledby="method-tab-01"><h3 data-i18n="method.01.title" >Начните с контекста.</h3><p data-i18n="method.01.description" >Прежде чем выбрать направление сделки, разберитесь в движении рынка. Я изучаю структуру, ключевые уровни и общую картину.</p><span data-i18n="method.01.note" class="method-note">Сначала структура, затем направление.</span></div><div id="method-02" role="tabpanel" aria-labelledby="method-tab-02" hidden><h3 data-i18n="method.02.title" >Определите важные зоны.</h3><p data-i18n="method.02.description" >Определите, где может находиться ликвидность и какие зоны заслуживают внимания. Уровень — это место для подготовки сценария, а не обещание разворота.</p><span data-i18n="method.02.note" class="method-note">Уровень — это зона интереса.</span></div><div id="method-03" role="tabpanel" aria-labelledby="method-tab-03" hidden><h3 data-i18n="method.03.title" >Рассмотрите обе стороны идеи.</h3><p data-i18n="method.03.description" >Определите, что подтвердит торговую идею и что её отменит. Для каждого сетапа нужны чёткие основания как для входа, так и для отказа от сделки.</p><span data-i18n="method.03.note" class="method-note">Подтверждение. Вход. Отмена сценария.</span></div><div id="method-04" role="tabpanel" aria-labelledby="method-tab-04" hidden><h3 data-i18n="method.04.title" >Сначала риск, затем объём.</h3><p data-i18n="method.04.description" >Задайте предел риска, определите размер позиции и регулярно пересматривайте план. Сопровождение сделки так же важно, как первоначальная идея.</p><span data-i18n="method.04.note" class="method-note">Риск — часть плана.</span></div></div><p class="chart-disclaimer"><span data-i18n="chart.disclaimer" >Схематичный пример. Не текущие рыночные данные и не торговый сигнал.</span></p></div></div>
-</div></section><section id="programs" class="programs section-light"><div class="wrap"><div class="section-heading reveal"><div><p class="eyebrow"><span data-i18n="programs.kicker" >Сообщество и сопровождение</span></p><h2><span data-i18n="programs.title1" >Сообщество</span><em data-i18n="programs.title2" >и индивидуальная работа</em></h2></div><p data-i18n="programs.description" class="heading-copy">Читайте открытый канал, узнайте о закрытом сообществе или обсудите индивидуальное сопровождение.</p></div><div class="service-grid"><article class="service-card public reveal"><div class="service-top"><span>01</span><span data-i18n="service.01.kicker" >ОСНОВНОЙ КАНАЛ</span><svg class="icon"><use href="#i-structure"/></svg></div><h3 data-i18n="service.01.title" >Держите рынок в поле зрения.</h3><p data-i18n="service.01.description" >Мой взгляд на рынок, ключевые уровни и сценарии по активам, за которыми я слежу.</p><ul><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.01.benefit0" >BTC, ETH, SOL и ликвидные активы</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.01.benefit1" >Торговые идеи и рыночный контекст</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.01.benefit2" >Обновления по развитию сценария</span></li></ul><a class="button button-outline" href="https://t.me/+JQRJCw2XdHI0MGFi" data-link="telegram" target="_blank" rel="noopener noreferrer"><span data-i18n="service.01.cta" >Открыть канал</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></article><article class="service-card vip reveal"><div class="service-top"><span>02</span><span data-i18n="service.02.kicker" >ЗАКРЫТОЕ VIP-СООБЩЕСТВО</span><svg class="icon"><use href="#i-target"/></svg></div><h3 data-i18n="service.02.title" >Разбираемся глубже. Вместе.</h3><p data-i18n="service.02.description" >Дополнительная аналитика рынка и торговые идеи в сообществе с более тесным общением.</p><ul><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.02.benefit0" >Дополнительная аналитика и сетапы</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.02.benefit1" >Сопровождение открытых сделок</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.02.benefit2" >Обсуждение риска и размера позиций</span></li></ul><a class="button button-white" href="https://t.me/onlyprofitadm" data-link="contact" target="_blank" rel="noopener noreferrer"><span data-i18n="service.02.cta" >Узнать о VIP-доступе</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></article><article class="service-card personal reveal"><div class="service-top"><span>03</span><span data-i18n="service.03.kicker" >ИНДИВИДУАЛЬНОЕ СОПРОВОЖДЕНИЕ</span><svg class="icon"><use href="#i-shield"/></svg></div><h3 data-i18n="service.03.title" >Личный подход к вашей торговле.</h3><p data-i18n="service.03.description" >Индивидуальное сопровождение для трейдеров, которым нужен более персональный формат.</p><ul><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.03.benefit0" >Обсуждение вашего торгового процесса</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.03.benefit1" >Разбор риска и расчёта объёма позиции</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.03.benefit2" >Выбор подходящего вам формата</span></li></ul><a class="button button-outline" href="https://t.me/onlyprofitadm" data-link="contact" target="_blank" rel="noopener noreferrer"><span data-i18n="service.03.cta" >Обсудить сопровождение</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></article></div><p class="services-note"><span data-i18n="programs.note" >Наличие мест в VIP-сообществе, стоимость и условия индивидуального сопровождения уточняются через официальный контакт до вступления.</span></p></div></section><section id="community" class="community-section section-light"><div class="wrap"><div class="community-top reveal"><div class="community-mark"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></div><p class="eyebrow"><span data-i18n="community.kicker" >YAN VERBIN / СООБЩЕСТВО</span></p><h2><span data-i18n="community.title1" >Присоединяйтесь к сообществу</span><em data-i18n="community.title2" >Яна Вербина</em></h2><p data-i18n="community.description" >Место, где можно следить за рынком, обсуждать логику сделок и развиваться вместе с другими трейдерами.</p><a class="button button-black" href="https://t.me/+JQRJCw2XdHI0MGFi" data-link="telegram" target="_blank" rel="noopener noreferrer"><span data-i18n="community.join" >Присоединиться в Telegram</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></div><div class="faq-block"><p class="eyebrow"><span data-i18n="faq.kicker" >ПЕРЕД ВСТУПЛЕНИЕМ</span></p><div class="faqs"><details><summary><span data-i18n="faq.0.q" >Как начать следить за Яном?</span><span aria-hidden="true">+</span></summary><p data-i18n="faq.0.a" >Откройте официальный Telegram-канал, чтобы читать обзоры рынка и торговые идеи. VIP-доступ и индивидуальное сопровождение обсуждаются отдельно через официальный контакт.</p></details><details><summary><span data-i18n="faq.1.q" >Даёт ли аккаунт WEEX доступ в VIP?</span><span aria-hidden="true">+</span></summary><p data-i18n="faq.1.a" >Регистрация на WEEX и услуги Яна не связаны между собой. До оплаты уточните наличие мест, стоимость и условия VIP-доступа через официальный контакт в Telegram.</p></details><details><summary><span data-i18n="faq.2.q" >Это сигналы или гарантия доходности?</span><span aria-hidden="true">+</span></summary><p data-i18n="faq.2.a" >Гарантированной доходности нет. Ян делится собственным анализом, возможными сценариями и логикой торговых решений. Ответственность за сделки и управление риском остаётся за вами.</p></details></div></div></div></section></main><footer><div class="wrap"><div class="footer-main"><a class="brand" href="#home"><span class="brand-monogram" aria-hidden="true">YV<span>↗</span></span><span class="brand-name">YAN VERBIN<small><span data-i18n="footer.tagline" >СТРУКТУРА. ДИСЦИПЛИНА. СООБЩЕСТВО.</span></small></span></a><div class="footer-links"><a class="footer-social" href="https://t.me/+JQRJCw2XdHI0MGFi" data-link="telegram" target="_blank" rel="noopener noreferrer"><span data-i18n="footer.telegram" >Telegram-канал</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a><a class="footer-social" href="https://t.me/onlyprofitadm" data-link="contact" target="_blank" rel="noopener noreferrer"><span data-i18n="footer.contact" >Официальный контакт</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a><a class="footer-social" href="https://www.weex.com/events/welcome-event?vipCode=syd0" data-link="weex" target="_blank" rel="noopener noreferrer"><span data-i18n="footer.weex" >Приветственная акция WEEX</span><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a></div></div><div class="footer-risk"><p data-i18n="footer.risk" >Материалы предназначены для обучения и информирования и не являются финансовой рекомендацией. Торговля криптовалютами и использование кредитного плеча связаны с высоким риском, вплоть до потери всего капитала. Торговые идеи, прошлые результаты и иллюстрации не гарантируют будущих результатов.</p><p data-i18n="footer.referral" >WEEX — биржа-партнёр Яна. На сайте используются реферальные ссылки; Ян может получать вознаграждение. Услуги и акции WEEX регулируются официальными условиями и могут быть недоступны в отдельных регионах.</p></div><div class="footer-bottom"><span>© 2026 YAN VERBIN</span><span><span data-i18n="footer.motto" >ПРЕЖДЕ ВСЕГО — ПРОЦЕСС.</span></span><a href="#home"><span data-i18n="footer.top" >НАВЕРХ</span> ↑</a></div></div></footer><aside id="mobile-cta" aria-label="Быстрый переход на WEEX" data-i18n-aria="aria.quickRegistration"><div><strong>YAN VERBIN × WEEX</strong><span><span data-i18n="mobile.caption" >Начните со знакомства с WEEX.</span></span></div><a class="button button-white" href="https://www.weex.com/events/welcome-event?vipCode=syd0" data-link="weex" target="_blank" rel="noopener noreferrer"><span data-i18n="mobile.cta" >Смотреть награды</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></aside></body></html>
+</div></section><section id="programs" class="programs section-light"><div class="wrap"><div class="section-heading reveal"><div><p class="eyebrow"><span data-i18n="programs.kicker" >Сообщество и сопровождение</span></p><h2><span data-i18n="programs.title1" >Сообщество</span><em data-i18n="programs.title2" >и индивидуальная работа</em></h2></div><p data-i18n="programs.description" class="heading-copy">Читайте открытый канал, узнайте о закрытом сообществе или обсудите индивидуальное сопровождение.</p></div><div class="service-grid"><article class="service-card public reveal"><div class="service-top"><span>01</span><span data-i18n="service.01.kicker" >ОСНОВНОЙ КАНАЛ</span><svg class="icon"><use href="#i-structure"/></svg></div><h3 data-i18n="service.01.title" >Держите рынок в поле зрения.</h3><p data-i18n="service.01.description" >Мой взгляд на рынок, ключевые уровни и сценарии по активам, за которыми я слежу.</p><ul><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.01.benefit0" >BTC, ETH, SOL и ликвидные активы</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.01.benefit1" >Торговые идеи и рыночный контекст</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.01.benefit2" >Обновления по развитию сценария</span></li></ul><a class="button button-outline" href="https://t.me/+JQRJCw2XdHI0MGFi" data-link="telegram" target="_blank" rel="noopener noreferrer"><span data-i18n="service.01.cta" >Открыть канал</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></article><article class="service-card vip reveal"><div class="service-top"><span>02</span><span data-i18n="service.02.kicker" >ЗАКРЫТОЕ VIP-СООБЩЕСТВО</span><svg class="icon"><use href="#i-target"/></svg></div><h3 data-i18n="service.02.title" >Разбираемся глубже. Вместе.</h3><p data-i18n="service.02.description" >Дополнительная аналитика рынка и торговые идеи в сообществе с более тесным общением.</p><ul><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.02.benefit0" >Дополнительная аналитика и сетапы</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.02.benefit1" >Сопровождение открытых сделок</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.02.benefit2" >Обсуждение риска и размера позиций</span></li></ul><a class="button button-white" href="https://t.me/onlyprofitadm" data-link="contact" target="_blank" rel="noopener noreferrer"><span data-i18n="service.02.cta" >Узнать о VIP-доступе</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></article><article class="service-card personal reveal"><div class="service-top"><span>03</span><span data-i18n="service.03.kicker" >ИНДИВИДУАЛЬНОЕ СОПРОВОЖДЕНИЕ</span><svg class="icon"><use href="#i-shield"/></svg></div><h3 data-i18n="service.03.title" >Личный подход к вашей торговле.</h3><p data-i18n="service.03.description" >Индивидуальное сопровождение для трейдеров, которым нужен более персональный формат.</p><ul><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.03.benefit0" >Обсуждение вашего торгового процесса</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.03.benefit1" >Разбор риска и расчёта объёма позиции</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="service.03.benefit2" >Выбор подходящего вам формата</span></li></ul><a class="button button-outline" href="https://t.me/onlyprofitadm" data-link="contact" target="_blank" rel="noopener noreferrer"><span data-i18n="service.03.cta" >Обсудить сопровождение</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></article></div><p class="services-note"><span data-i18n="programs.note" >Наличие мест в VIP-сообществе, стоимость и условия индивидуального сопровождения уточняются через официальный контакт до вступления.</span></p></div></section><section id="community" class="community-section section-light"><div class="wrap"><div class="community-top reveal"><div class="community-mark"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></div><p class="eyebrow"><span data-i18n="community.kicker" >YAN VERBIN / СООБЩЕСТВО</span></p><h2><span data-i18n="community.title1" >Присоединяйтесь к сообществу</span><em data-i18n="community.title2" >Яна Вербина</em></h2><p data-i18n="community.description" >Место, где можно следить за рынком, обсуждать логику сделок и развиваться вместе с другими трейдерами.</p><a class="button button-black" href="https://t.me/+JQRJCw2XdHI0MGFi" data-link="telegram" target="_blank" rel="noopener noreferrer"><span data-i18n="community.join" >Присоединиться в Telegram</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></div><div class="faq-block"><p class="eyebrow"><span data-i18n="faq.kicker" >ПЕРЕД ВСТУПЛЕНИЕМ</span></p><div class="faqs"><details><summary><span data-i18n="faq.0.q" >Как начать следить за Яном?</span><span aria-hidden="true">+</span></summary><p data-i18n="faq.0.a" >Откройте официальный Telegram-канал, чтобы читать обзоры рынка и торговые идеи. VIP-доступ и индивидуальное сопровождение обсуждаются отдельно через официальный контакт.</p></details><details><summary><span data-i18n="faq.1.q" >Даёт ли аккаунт WEEX доступ в VIP?</span><span aria-hidden="true">+</span></summary><p data-i18n="faq.1.a" >Регистрация на WEEX и услуги Яна не связаны между собой. До оплаты уточните наличие мест, стоимость и условия VIP-доступа через официальный контакт в Telegram.</p></details><details><summary><span data-i18n="faq.2.q" >Это сигналы или гарантия доходности?</span><span aria-hidden="true">+</span></summary><p data-i18n="faq.2.a" >Гарантированной доходности нет. Ян делится собственным анализом, возможными сценариями и логикой торговых решений. Ответственность за сделки и управление риском остаётся за вами.</p></details></div></div></div></section></main><footer><div class="wrap"><div class="footer-main"><a class="brand" href="#home"><span class="brand-monogram" aria-hidden="true">YV<span>↗</span></span><span class="brand-name">YAN VERBIN<small><span data-i18n="footer.tagline" >СТРУКТУРА. ДИСЦИПЛИНА. СООБЩЕСТВО.</span></small></span></a><div class="footer-links"><a class="footer-social" href="https://t.me/+JQRJCw2XdHI0MGFi" data-link="telegram" target="_blank" rel="noopener noreferrer"><span data-i18n="footer.telegram" >Telegram-канал</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a><a class="footer-social" href="https://t.me/onlyprofitadm" data-link="contact" target="_blank" rel="noopener noreferrer"><span data-i18n="footer.contact" >Официальный контакт</span><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a><a class="footer-social" href="https://www.weex.com/events/welcome-event?vipCode=syd0" data-link="weex" target="_blank" rel="noopener noreferrer"><span data-i18n="footer.weex" >Приветственная акция WEEX</span><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a></div></div><div class="footer-risk"><p data-i18n="footer.risk" >Материалы предназначены для обучения и информирования и не являются финансовой рекомендацией. Торговля криптовалютами и использование кредитного плеча связаны с высоким риском, вплоть до потери всего капитала. Торговые идеи, прошлые результаты и иллюстрации не гарантируют будущих результатов.</p><p data-i18n="footer.referral" >WEEX — биржа-партнёр Яна. На сайте используются реферальные ссылки; Ян может получать вознаграждение. Услуги и акции WEEX регулируются официальными условиями и могут быть недоступны в отдельных регионах.</p></div><div class="footer-bottom"><span>© 2026 YAN VERBIN</span><span><span data-i18n="footer.motto" >ПРЕЖДЕ ВСЕГО — ПРОЦЕСС.</span></span><a href="#home"><span data-i18n="footer.top" >НАВЕРХ</span> ↑</a></div></div></footer><aside id="mobile-cta" aria-label="Быстрый переход на WEEX" data-i18n-aria="aria.quickRegistration"><div><strong>YAN VERBIN × WEEX</strong><span><span data-i18n="mobile.caption" >Начните со знакомства с WEEX.</span></span></div><a class="button button-white" href="https://www.weex.com/events/welcome-event?vipCode=syd0" data-link="weex" target="_blank" rel="noopener noreferrer"><span data-i18n="mobile.cta" >Смотреть награды</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></aside>
+<script>window.YAN_CONFIG = {
+  "defaultLanguage": "ru",
+  "links": {
+    "telegram": "https://t.me/+JQRJCw2XdHI0MGFi",
+    "contact": "https://t.me/onlyprofitadm",
+    "weex": "https://www.weex.com/events/welcome-event?vipCode=syd0",
+    "register": "https://www.weex.com/register?from=https%3A%2F%2Fwww.weex.com%2Fevents%2Fwelcome-event%3FvipCode%3Dsyd0&vipCode=syd0"
+  }
+};
+</script>
+<script>// Complete English and Russian copy for YAN VERBIN.
+window.YAN_TRANSLATIONS = {
+  "en": {
+    "meta.title": "YAN VERBIN × WEEX — Read the market. Trade the plan.",
+    "meta.description": "Explore Yan Verbin’s approach to crypto trading: market structure, liquidity, trade scenarios and risk. Join the community and explore WEEX welcome rewards.",
+    "aria.menuOpen": "Open navigation",
+    "aria.menuClose": "Close navigation",
+    "aria.home": "Yan Verbin home",
+    "aria.mainNav": "Main navigation",
+    "aria.languages": "Choose language",
+    "aria.methodTabs": "Explore the trading process",
+    "aria.quickRegistration": "Quick access to WEEX",
+    "motion.pause": "Pause motion",
+    "motion.resume": "Resume motion",
+    "motion.reduced": "Motion reduced",
+    "skip": "Skip to content",
+    "announcement": "A clearer view of the market. A community to grow with.",
+    "brand.community": "TRADING COMMUNITY",
+    "nav.approach": "The approach",
+    "nav.programs": "Programs",
+    "nav.rewards": "WEEX rewards",
+    "nav.join": "Join Telegram",
+    "hero.kicker": "YAN VERBIN × WEEX",
+    "hero.title1": "Understand the market.",
+    "hero.title2": "Trade with a plan.",
+    "hero.title3": "TRADE THE PLAN.",
+    "hero.description": "Market structure. Liquidity. Clear scenarios. Join Yan Verbin for the thinking behind the trade—and the discipline that comes before it.",
+    "hero.weex": "Get started on WEEX",
+    "hero.telegram": "Join the channel",
+    "hero.partner": "PARTNER EXCHANGE",
+    "hero.markets": "BTC / ETH / SOL & MORE",
+    "identity.label": "INDEPENDENT PERSPECTIVE",
+    "identity.role": "TRADER · CREATOR",
+    "identity.note": "EVERY TRADE HAS A THESIS.",
+    "identity.subnote": "Know where yours becomes invalid.",
+    "identity.caption": "DISCIPLINE OVER IMPULSE.",
+    "hero.scroll": "EXPLORE THE APPROACH",
+    "ticker.btc": "BTC",
+    "ticker.eth": "ETH",
+    "ticker.sol": "SOL",
+    "ticker.structure": "MARKET STRUCTURE",
+    "ticker.liquidity": "LIQUIDITY",
+    "ticker.risk": "RISK FIRST",
+    "method.01.tab": "Read the structure.",
+    "method.01.title": "Start with context.",
+    "method.01.description": "Understand how the market is moving before choosing a direction. I look at structure, key levels and the broader picture.",
+    "method.01.note": "Structure before direction.",
+    "method.02.tab": "Map the liquidity.",
+    "method.02.title": "Find the areas that matter.",
+    "method.02.description": "Identify where liquidity may sit and which zones deserve attention. A level is a place to prepare a scenario, not a promise of a reversal.",
+    "method.02.note": "A level is a point of interest.",
+    "method.03.tab": "Build the scenario.",
+    "method.03.title": "Know both sides of the idea.",
+    "method.03.description": "Define what would support the trade and what would invalidate it. Every setup needs a clear reason to enter—and a reason to step away.",
+    "method.03.note": "Confirmation. Entry. Invalidation.",
+    "method.04.tab": "Define the risk.",
+    "method.04.title": "Size the risk before the position.",
+    "method.04.description": "Set a risk limit, consider position size and keep the plan under review. Follow-up matters as much as the initial idea.",
+    "method.04.note": "Risk is part of the plan.",
+    "approach.kicker": "Trading approach",
+    "approach.title1": "My approach",
+    "approach.title2": "to the market",
+    "approach.intro": "I’m Yan Verbin, a trader and the creator of a crypto trading community. My focus is BTC, ETH, SOL and other liquid market assets.",
+    "approach.intro2": "I share my market perspective, trading setups and updates—with the decision-making process in full view.",
+    "chart.label": "ANATOMY OF A SCENARIO",
+    "chart.liquidity": "LIQUIDITY ZONE",
+    "chart.invalidation": "INVALIDATION",
+    "chart.disclaimer": "Illustrative framework. Not live market data or a trading signal.",
+    "approach.signoff": "Clear thinking. Defined risk. Consistent process.",
+    "service.01.kicker": "THE MAIN CHANNEL",
+    "service.01.title": "Stay close to the market.",
+    "service.01.description": "My market perspective, key levels and scenarios for the assets I follow.",
+    "service.01.benefit0": "BTC, ETH, SOL & liquid assets",
+    "service.01.benefit1": "Trading ideas and market context",
+    "service.01.benefit2": "Updates as the scenario develops",
+    "service.01.cta": "Open the channel",
+    "service.02.kicker": "PRIVATE VIP COMMUNITY",
+    "service.02.title": "Go deeper. Together.",
+    "service.02.description": "Additional market analysis and trading ideas in a more focused community.",
+    "service.02.benefit0": "Additional analysis and setups",
+    "service.02.benefit1": "Support and updates on open trades",
+    "service.02.benefit2": "Risk and position-sizing discussions",
+    "service.02.cta": "Ask about VIP access",
+    "service.03.kicker": "INDIVIDUAL GUIDANCE",
+    "service.03.title": "A more personal format.",
+    "service.03.description": "Individual guidance for traders who want a more personalized approach.",
+    "service.03.benefit0": "Discuss your trading process",
+    "service.03.benefit1": "Work through risk and sizing concepts",
+    "service.03.benefit2": "Explore the format that fits you",
+    "service.03.cta": "Discuss individual guidance",
+    "programs.kicker": "Community & guidance",
+    "programs.title1": "Community",
+    "programs.title2": "& individual guidance",
+    "programs.description": "Follow the public channel, explore the private community or ask about individual guidance.",
+    "programs.note": "VIP availability, pricing and individual guidance terms are confirmed through the official contact before joining.",
+    "reward.0.type": "Coupon",
+    "reward.0.title": "Create your account",
+    "reward.0.description": "Register through Yan’s WEEX invitation link.",
+    "reward.1.type": "Trial fund",
+    "reward.1.title": "Make a qualifying deposit",
+    "reward.1.description": "Net deposit ≥ 100 USDT and hold for 3 consecutive days.",
+    "reward.2.type": "Position airdrop",
+    "reward.2.title": "Complete your first futures trade",
+    "reward.2.description": "First futures trade ≥ 2,000 USDT. A leveraged position reward, not a cash payment.",
+    "reward.3.type": "Coupon",
+    "reward.3.title": "Log in to the app",
+    "reward.3.description": "Receive a coupon on your first WEEX app login.",
+    "weex.kicker": "WEEX welcome event",
+    "weex.tag": "NEW USER REWARDS",
+    "weex.title1": "Rewards",
+    "weex.title2": "for new users",
+    "weex.description": "Explore the welcome event through Yan’s invitation. Review the tasks, choose your next step and keep your own risk limits in view.",
+    "weex.join": "Explore the welcome event",
+    "weex.code": "INVITATION CODE",
+    "weex.upTo": "UNLOCK UP TO",
+    "weex.rewardKinds": "Coupons · Trial funds · Position airdrops",
+    "weex.limit": "Maximum advertised by WEEX. Eligibility and task conditions apply; rewards are not a cash guarantee.",
+    "weex.tasks": "START WITH THESE TASKS",
+    "weex.tasksNote": "SELECTED WELCOME REWARDS",
+    "weex.conditions": "Task availability, eligible markets, verification, regional restrictions and reward validity are governed by WEEX. Coupons and trial funds are not withdrawable cash. Position value differs from bonus margin.",
+    "weex.all": "See every task & full terms",
+    "weex.source": "Official event checked September 28, 2026. Offers may change.",
+    "faq.0.q": "How do I start following Yan?",
+    "faq.0.a": "Open the official Telegram channel for market perspectives and trading ideas. VIP access and individual guidance are discussed separately with the official contact.",
+    "faq.1.q": "Does a WEEX account include VIP access?",
+    "faq.1.a": "WEEX registration and Yan’s services are separate. Ask the official Telegram contact about VIP availability, pricing and access before making any payment.",
+    "faq.2.q": "Are these signals or guaranteed returns?",
+    "faq.2.a": "There are no guaranteed returns. Yan shares his own analysis, possible scenarios and the logic behind trading decisions. You remain responsible for your trades and risk management.",
+    "community.kicker": "YAN VERBIN / COMMUNITY",
+    "community.title1": "Join the community",
+    "community.title2": "of Yan Verbin",
+    "community.description": "A place to stay informed, discuss the thinking behind the trade and develop alongside other traders.",
+    "community.join": "Join the Telegram community",
+    "faq.kicker": "BEFORE YOU JOIN",
+    "footer.tagline": "STRUCTURE. DISCIPLINE. COMMUNITY.",
+    "footer.telegram": "Telegram channel",
+    "footer.contact": "Official contact",
+    "footer.weex": "WEEX welcome event",
+    "footer.risk": "Educational and informational content, not financial advice. Crypto and leveraged trading involve substantial risk, including the loss of your entire capital. Trading ideas, historical outcomes and illustrations do not guarantee future results.",
+    "footer.referral": "WEEX is Yan’s partner exchange. This website uses referral links; Yan may receive compensation. WEEX services and promotions are subject to official terms and regional availability.",
+    "footer.motto": "THE PROCESS COMES FIRST.",
+    "footer.top": "BACK TO TOP",
+    "mobile.caption": "Your welcome starts here.",
+    "mobile.cta": "Explore rewards",
+    "nav.register": "Sign Up"
+  },
+  "ru": {
+    "meta.title": "YAN VERBIN × WEEX — Читай рынок. Торгуй по плану.",
+    "meta.description": "Торговый подход Яна Вербина: структура рынка, ликвидность, торговые сценарии и риск. Присоединяйтесь к сообществу и узнайте о приветственных наградах WEEX.",
+    "aria.menuOpen": "Открыть меню",
+    "aria.menuClose": "Закрыть меню",
+    "aria.home": "Главная страница Яна Вербина",
+    "aria.mainNav": "Основная навигация",
+    "aria.languages": "Выбрать язык",
+    "aria.methodTabs": "Изучить торговый процесс",
+    "aria.quickRegistration": "Быстрый переход на WEEX",
+    "motion.pause": "Остановить анимацию",
+    "motion.resume": "Включить анимацию",
+    "motion.reduced": "Анимация ограничена",
+    "skip": "Перейти к содержимому",
+    "announcement": "Яснее видеть рынок. Развиваться вместе с сообществом.",
+    "brand.community": "СООБЩЕСТВО ТРЕЙДЕРОВ",
+    "nav.approach": "Подход",
+    "nav.programs": "Форматы",
+    "nav.rewards": "Награды WEEX",
+    "nav.join": "В Telegram",
+    "hero.kicker": "YAN VERBIN × WEEX",
+    "hero.title1": "Понимайте рынок.",
+    "hero.title2": "Торгуйте по плану.",
+    "hero.title3": "ТОРГУЙ ПО ПЛАНУ.",
+    "hero.description": "Структура рынка. Ликвидность. Чёткие сценарии. Разбирайте с Яном Вербиным логику торговых решений и дисциплину, на которой они строятся.",
+    "hero.weex": "Начать на WEEX",
+    "hero.telegram": "Перейти в канал",
+    "hero.partner": "БИРЖА-ПАРТНЁР",
+    "hero.markets": "BTC / ETH / SOL И ДРУГИЕ",
+    "identity.label": "НЕЗАВИСИМЫЙ ВЗГЛЯД",
+    "identity.role": "ТРЕЙДЕР · АВТОР СООБЩЕСТВА",
+    "identity.note": "У КАЖДОЙ СДЕЛКИ ЕСТЬ ЛОГИКА.",
+    "identity.subnote": "Знайте, когда ваш сценарий перестаёт работать.",
+    "identity.caption": "ДИСЦИПЛИНА ВАЖНЕЕ ИМПУЛЬСА.",
+    "hero.scroll": "ПОЗНАКОМИТЬСЯ С ПОДХОДОМ",
+    "ticker.btc": "BTC",
+    "ticker.eth": "ETH",
+    "ticker.sol": "SOL",
+    "ticker.structure": "СТРУКТУРА РЫНКА",
+    "ticker.liquidity": "ЛИКВИДНОСТЬ",
+    "ticker.risk": "СНАЧАЛА РИСК",
+    "method.01.tab": "Изучить структуру.",
+    "method.01.title": "Начните с контекста.",
+    "method.01.description": "Прежде чем выбрать направление сделки, разберитесь в движении рынка. Я изучаю структуру, ключевые уровни и общую картину.",
+    "method.01.note": "Сначала структура, затем направление.",
+    "method.02.tab": "Найти ликвидность.",
+    "method.02.title": "Определите важные зоны.",
+    "method.02.description": "Определите, где может находиться ликвидность и какие зоны заслуживают внимания. Уровень — это место для подготовки сценария, а не обещание разворота.",
+    "method.02.note": "Уровень — это зона интереса.",
+    "method.03.tab": "Построить сценарий.",
+    "method.03.title": "Рассмотрите обе стороны идеи.",
+    "method.03.description": "Определите, что подтвердит торговую идею и что её отменит. Для каждого сетапа нужны чёткие основания как для входа, так и для отказа от сделки.",
+    "method.03.note": "Подтверждение. Вход. Отмена сценария.",
+    "method.04.tab": "Оценить риск.",
+    "method.04.title": "Сначала риск, затем объём.",
+    "method.04.description": "Задайте предел риска, определите размер позиции и регулярно пересматривайте план. Сопровождение сделки так же важно, как первоначальная идея.",
+    "method.04.note": "Риск — часть плана.",
+    "approach.kicker": "Подход к трейдингу",
+    "approach.title1": "Мой подход",
+    "approach.title2": "к рынку",
+    "approach.intro": "Я Ян Вербин, трейдер и создатель сообщества криптотрейдеров. В центре моего внимания — BTC, ETH, SOL и другие ликвидные активы.",
+    "approach.intro2": "Я делюсь своим взглядом на рынок, торговыми сетапами и обновлениями, открыто показывая, как принимаю решения.",
+    "chart.label": "АНАТОМИЯ СЦЕНАРИЯ",
+    "chart.liquidity": "ЗОНА ЛИКВИДНОСТИ",
+    "chart.invalidation": "ОТМЕНА СЦЕНАРИЯ",
+    "chart.disclaimer": "Схематичный пример. Не текущие рыночные данные и не торговый сигнал.",
+    "approach.signoff": "Ясная логика. Определённый риск. Последовательный процесс.",
+    "service.01.kicker": "ОСНОВНОЙ КАНАЛ",
+    "service.01.title": "Держите рынок в поле зрения.",
+    "service.01.description": "Мой взгляд на рынок, ключевые уровни и сценарии по активам, за которыми я слежу.",
+    "service.01.benefit0": "BTC, ETH, SOL и ликвидные активы",
+    "service.01.benefit1": "Торговые идеи и рыночный контекст",
+    "service.01.benefit2": "Обновления по развитию сценария",
+    "service.01.cta": "Открыть канал",
+    "service.02.kicker": "ЗАКРЫТОЕ VIP-СООБЩЕСТВО",
+    "service.02.title": "Разбираемся глубже. Вместе.",
+    "service.02.description": "Дополнительная аналитика рынка и торговые идеи в сообществе с более тесным общением.",
+    "service.02.benefit0": "Дополнительная аналитика и сетапы",
+    "service.02.benefit1": "Сопровождение открытых сделок",
+    "service.02.benefit2": "Обсуждение риска и размера позиций",
+    "service.02.cta": "Узнать о VIP-доступе",
+    "service.03.kicker": "ИНДИВИДУАЛЬНОЕ СОПРОВОЖДЕНИЕ",
+    "service.03.title": "Личный подход к вашей торговле.",
+    "service.03.description": "Индивидуальное сопровождение для трейдеров, которым нужен более персональный формат.",
+    "service.03.benefit0": "Обсуждение вашего торгового процесса",
+    "service.03.benefit1": "Разбор риска и расчёта объёма позиции",
+    "service.03.benefit2": "Выбор подходящего вам формата",
+    "service.03.cta": "Обсудить сопровождение",
+    "programs.kicker": "Сообщество и сопровождение",
+    "programs.title1": "Сообщество",
+    "programs.title2": "и индивидуальная работа",
+    "programs.description": "Читайте открытый канал, узнайте о закрытом сообществе или обсудите индивидуальное сопровождение.",
+    "programs.note": "Наличие мест в VIP-сообществе, стоимость и условия индивидуального сопровождения уточняются через официальный контакт до вступления.",
+    "reward.0.type": "Купон",
+    "reward.0.title": "Создайте аккаунт",
+    "reward.0.description": "Зарегистрируйтесь на WEEX по пригласительной ссылке Яна.",
+    "reward.1.type": "Бонусные средства",
+    "reward.1.title": "Пополните счёт по условиям акции",
+    "reward.1.description": "Чистое пополнение ≥ 100 USDT с удержанием средств 3 дня подряд.",
+    "reward.2.type": "Аирдроп позиции",
+    "reward.2.title": "Совершите первую фьючерсную сделку",
+    "reward.2.description": "Первая фьючерсная сделка на сумму ≥ 2 000 USDT. Награда — позиция с кредитным плечом, а не денежная выплата.",
+    "reward.3.type": "Купон",
+    "reward.3.title": "Войдите в приложение",
+    "reward.3.description": "Получите купон за первый вход в приложение WEEX.",
+    "weex.kicker": "Приветственная акция WEEX",
+    "weex.tag": "НАГРАДЫ НОВЫМ ПОЛЬЗОВАТЕЛЯМ",
+    "weex.title1": "Награды",
+    "weex.title2": "для новых пользователей",
+    "weex.description": "Откройте приветственную акцию по приглашению Яна. Изучите задания, выберите следующий шаг и учитывайте собственные ограничения по риску.",
+    "weex.join": "Перейти к акции",
+    "weex.code": "КОД ПРИГЛАШЕНИЯ",
+    "weex.upTo": "ПОЛУЧИТЕ ДО",
+    "weex.rewardKinds": "Купоны · Бонусные средства · Аирдропы позиций",
+    "weex.limit": "Максимум, заявленный WEEX. Действуют требования к участникам и условия заданий; награды не гарантируют денежную выплату.",
+    "weex.tasks": "НАЧНИТЕ С ЭТИХ ЗАДАНИЙ",
+    "weex.tasksNote": "НЕКОТОРЫЕ ПРИВЕТСТВЕННЫЕ НАГРАДЫ",
+    "weex.conditions": "Доступность заданий, подходящие рынки, верификация, региональные ограничения и сроки действия наград определяются WEEX. Купоны и бонусные средства нельзя вывести как деньги. Номинальная стоимость позиции отличается от суммы бонусной маржи.",
+    "weex.all": "Все задания и полные условия",
+    "weex.source": "Официальная страница акции проверена 28 сентября 2026 года. Предложения могут меняться.",
+    "faq.0.q": "Как начать следить за Яном?",
+    "faq.0.a": "Откройте официальный Telegram-канал, чтобы читать обзоры рынка и торговые идеи. VIP-доступ и индивидуальное сопровождение обсуждаются отдельно через официальный контакт.",
+    "faq.1.q": "Даёт ли аккаунт WEEX доступ в VIP?",
+    "faq.1.a": "Регистрация на WEEX и услуги Яна не связаны между собой. До оплаты уточните наличие мест, стоимость и условия VIP-доступа через официальный контакт в Telegram.",
+    "faq.2.q": "Это сигналы или гарантия доходности?",
+    "faq.2.a": "Гарантированной доходности нет. Ян делится собственным анализом, возможными сценариями и логикой торговых решений. Ответственность за сделки и управление риском остаётся за вами.",
+    "community.kicker": "YAN VERBIN / СООБЩЕСТВО",
+    "community.title1": "Присоединяйтесь к сообществу",
+    "community.title2": "Яна Вербина",
+    "community.description": "Место, где можно следить за рынком, обсуждать логику сделок и развиваться вместе с другими трейдерами.",
+    "community.join": "Присоединиться в Telegram",
+    "faq.kicker": "ПЕРЕД ВСТУПЛЕНИЕМ",
+    "footer.tagline": "СТРУКТУРА. ДИСЦИПЛИНА. СООБЩЕСТВО.",
+    "footer.telegram": "Telegram-канал",
+    "footer.contact": "Официальный контакт",
+    "footer.weex": "Приветственная акция WEEX",
+    "footer.risk": "Материалы предназначены для обучения и информирования и не являются финансовой рекомендацией. Торговля криптовалютами и использование кредитного плеча связаны с высоким риском, вплоть до потери всего капитала. Торговые идеи, прошлые результаты и иллюстрации не гарантируют будущих результатов.",
+    "footer.referral": "WEEX — биржа-партнёр Яна. На сайте используются реферальные ссылки; Ян может получать вознаграждение. Услуги и акции WEEX регулируются официальными условиями и могут быть недоступны в отдельных регионах.",
+    "footer.motto": "ПРЕЖДЕ ВСЕГО — ПРОЦЕСС.",
+    "footer.top": "НАВЕРХ",
+    "mobile.caption": "Начните со знакомства с WEEX.",
+    "mobile.cta": "Смотреть награды",
+    "nav.register": "Регистрация"
+  }
+};
+</script>
+<script>(() => {
+  'use strict';
+
+  const root = document.documentElement;
+  const storageKey = 'yan-verbin-language-preference';
+  const config = window.YAN_CONFIG || {};
+  const defaultLanguage = config.defaultLanguage === 'en' ? 'en' : 'ru';
+  const translations = window.YAN_TRANSLATIONS || {};
+  const defaultLinks = {
+    telegram: 'https://t.me/+JQRJCw2XdHI0MGFi',
+    weex: 'https://www.weex.com/events/welcome-event?vipCode=syd0',
+  };
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const textNodes = Array.from(document.querySelectorAll('[data-i18n]'));
+  const ariaNodes = Array.from(document.querySelectorAll('[data-i18n-aria]'));
+  const initialText = new Map(textNodes.map(node => [node, node.textContent]));
+  const initialAria = new Map(ariaNodes.map(node => [node, node.getAttribute('aria-label') || '']));
+  const initialTitle = document.title;
+  const description = document.querySelector('meta[name="description"]');
+  const initialDescription = description ? description.content : '';
+  const languageButtons = Array.from(document.querySelectorAll('[data-lang]'));
+  let language = defaultLanguage;
+
+  function translation(key, fallback) {
+    const dictionary = translations[language] || {};
+    const english = translations.en || {};
+    const resolve = source => {
+      if (Object.prototype.hasOwnProperty.call(source, key)) return source[key];
+      return key.split('.').reduce((value, part) => (
+        value && typeof value === 'object' ? value[part] : undefined
+      ), source);
+    };
+    const value = resolve(dictionary);
+    if (typeof value === 'string') return value;
+    const englishValue = resolve(english);
+    return typeof englishValue === 'string' ? englishValue : fallback;
+  }
+
+  function safeLink(value) {
+    try {
+      const url = new URL(value);
+      return url.protocol === 'https:' && !url.username && !url.password ? url.href : null;
+    } catch {
+      return null;
+    }
+  }
+
+  document.querySelectorAll('a[data-link]').forEach(anchor => {
+    const key = anchor.dataset.link;
+    const configured = config.links && config.links[key];
+    const href = safeLink(configured) || safeLink(defaultLinks[key]);
+    if (href) {
+      anchor.href = href;
+      anchor.target = '_blank';
+      anchor.rel = 'noopener noreferrer';
+    }
+  });
+
+  const marquee = document.querySelector('.market-marquee');
+  const motionToggle = document.getElementById('motion-toggle');
+  let manuallyPaused = false;
+
+  function updateMotion() {
+    const reduced = reducedMotion.matches;
+    const paused = reduced || manuallyPaused;
+    if (marquee) {
+      marquee.classList.toggle('is-paused', paused);
+      marquee.classList.toggle('is-reduced', reduced);
+    }
+    if (!motionToggle) return;
+    const key = reduced ? 'motion.reduced' : paused ? 'motion.resume' : 'motion.pause';
+    const fallbacks = language === 'ru'
+      ? { 'motion.reduced': 'Анимация отключена', 'motion.resume': 'Продолжить анимацию', 'motion.pause': 'Приостановить анимацию' }
+      : { 'motion.reduced': 'Motion reduced', 'motion.resume': 'Resume motion', 'motion.pause': 'Pause motion' };
+    const label = translation(key, fallbacks[key]);
+    const labelNode = motionToggle.querySelector('[data-motion-label]');
+    if (labelNode) labelNode.textContent = label;
+    else motionToggle.textContent = label;
+    motionToggle.setAttribute('aria-label', label);
+    motionToggle.setAttribute('aria-pressed', String(paused));
+    motionToggle.disabled = reduced;
+  }
+
+  function setLanguage(nextLanguage, persist = true) {
+    language = nextLanguage === 'en' || nextLanguage === 'ru' ? nextLanguage : defaultLanguage;
+    root.lang = language;
+    root.dataset.language = language;
+    textNodes.forEach(node => {
+      node.textContent = translation(node.dataset.i18n, initialText.get(node));
+    });
+    ariaNodes.forEach(node => {
+      node.setAttribute('aria-label', translation(node.dataset.i18nAria, initialAria.get(node)));
+    });
+    languageButtons.forEach(button => {
+      const selected = button.dataset.lang === language;
+      button.setAttribute('aria-pressed', String(selected));
+      button.classList.toggle('is-active', selected);
+    });
+    document.title = translation('meta.title', initialTitle);
+    if (description) description.content = translation('meta.description', initialDescription);
+    updateMotion();
+    updateMenuLabel();
+    if (persist) {
+      try { window.localStorage.setItem(storageKey, language); } catch { /* The page also works without storage. */ }
+    }
+    document.dispatchEvent(new CustomEvent('yan:languagechange', { detail: { language } }));
+  }
+
+  function updateMenuLabel() {
+    const toggle = document.getElementById('menu-toggle');
+    if (!toggle) return;
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-label', translation(
+      open ? 'aria.menuClose' : 'aria.menuOpen',
+      open ? 'Close navigation' : 'Open navigation'
+    ));
+  }
+
+  languageButtons.forEach(button => {
+    button.addEventListener('click', () => setLanguage(button.dataset.lang));
+  });
+
+  let storedLanguage = defaultLanguage;
+  try {
+    const preference = window.localStorage.getItem(storageKey);
+    if (preference === 'ru' || preference === 'en') storedLanguage = preference;
+  } catch { /* Keep the configured default when storage is unavailable. */ }
+  setLanguage(storedLanguage, false);
+
+  if (motionToggle) {
+    motionToggle.addEventListener('click', () => {
+      manuallyPaused = !manuallyPaused;
+      updateMotion();
+    });
+  }
+  if (reducedMotion.addEventListener) reducedMotion.addEventListener('change', updateMotion);
+  else if (reducedMotion.addListener) reducedMotion.addListener(updateMotion);
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const siteNav = document.getElementById('site-nav');
+  const header = document.querySelector('.site-header');
+  const hero = document.getElementById('home');
+  const mobileCta = document.getElementById('mobile-cta');
+  const progress = document.getElementById('reading-progress');
+  let menuOpen = false;
+  let updatePending = false;
+
+  function mobileMenuEnabled() {
+    return menuToggle && window.getComputedStyle(menuToggle).display !== 'none';
+  }
+
+  function updateNavigationVisibility() {
+    if (!siteNav) return;
+    const collapsed = mobileMenuEnabled() && !menuOpen;
+    siteNav.inert = collapsed;
+    if (collapsed) siteNav.setAttribute('aria-hidden', 'true');
+    else siteNav.removeAttribute('aria-hidden');
+  }
+
+  function updatePagePosition() {
+    updatePending = false;
+    const scrollTop = Math.max(0, window.scrollY || root.scrollTop);
+    const scrollableHeight = Math.max(0, root.scrollHeight - window.innerHeight);
+    const ratio = scrollableHeight ? Math.min(1, scrollTop / scrollableHeight) : 0;
+    if (progress) progress.style.transform = `scaleX(${ratio})`;
+    if (header) header.classList.toggle('is-scrolled', scrollTop > 24);
+    if (mobileCta) {
+      const pastHero = hero ? hero.getBoundingClientRect().bottom <= 80 : scrollTop > 500;
+      const visible = pastHero && !menuOpen;
+      mobileCta.classList.toggle('is-visible', visible);
+      mobileCta.classList.toggle('is-hidden', !visible);
+      mobileCta.setAttribute('aria-hidden', String(!visible));
+      mobileCta.inert = !visible;
+    }
+  }
+
+  function requestPositionUpdate() {
+    if (!updatePending) {
+      updatePending = true;
+      window.requestAnimationFrame(updatePagePosition);
+    }
+  }
+
+  function setMenu(open, restoreFocus = false) {
+    menuOpen = Boolean(open && mobileMenuEnabled());
+    if (menuToggle) {
+      menuToggle.setAttribute('aria-expanded', String(menuOpen));
+      menuToggle.classList.toggle('is-open', menuOpen);
+      updateMenuLabel();
+    }
+    if (siteNav) siteNav.classList.toggle('is-open', menuOpen);
+    if (header) header.classList.toggle('is-menu-open', menuOpen);
+    document.body.classList.toggle('menu-open', menuOpen);
+    updateNavigationVisibility();
+    updatePagePosition();
+    if (restoreFocus && menuToggle) menuToggle.focus();
+  }
+
+  if (menuToggle && siteNav) {
+    menuToggle.setAttribute('aria-controls', siteNav.id);
+    menuToggle.addEventListener('click', () => {
+      setMenu(!menuOpen);
+      if (menuOpen) siteNav.querySelector('a[href]')?.focus();
+    });
+    siteNav.querySelectorAll('a[href]').forEach(anchor => {
+      anchor.addEventListener('click', () => setMenu(false));
+    });
+    document.addEventListener('click', event => {
+      if (menuOpen && !siteNav.contains(event.target) && !menuToggle.contains(event.target)) setMenu(false);
+    });
+    document.addEventListener('keydown', event => {
+      if (!menuOpen) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        setMenu(false, true);
+      }
+    });
+    setMenu(false);
+  }
+
+  window.addEventListener('scroll', requestPositionUpdate, { passive: true });
+  window.addEventListener('resize', () => {
+    if (!mobileMenuEnabled() && menuOpen) setMenu(false);
+    updateNavigationVisibility();
+    requestPositionUpdate();
+  }, { passive: true });
+  window.addEventListener('load', requestPositionUpdate, { once: true });
+  document.addEventListener('yan:languagechange', requestPositionUpdate);
+  updatePagePosition();
+
+  const methodTabs = Array.from(document.querySelectorAll('[data-method]')).filter(tab => (
+    document.getElementById(`method-${tab.dataset.method}`)
+  ));
+  const methodVisual = document.querySelector('.method-visual');
+
+  function selectMethod(id, moveFocus = false) {
+    methodTabs.forEach(tab => {
+      const selected = tab.dataset.method === id;
+      const panel = document.getElementById(`method-${tab.dataset.method}`);
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      tab.classList.toggle('is-active', selected);
+      panel.hidden = !selected;
+      panel.classList.toggle('is-active', selected);
+      if (selected && moveFocus) tab.focus();
+    });
+    if (methodVisual) methodVisual.dataset.active = id;
+    requestPositionUpdate();
+  }
+
+  if (methodTabs.length) {
+    methodTabs.forEach((tab, index) => {
+      const id = tab.dataset.method;
+      const panel = document.getElementById(`method-${id}`);
+      if (!tab.id) tab.id = `method-tab-${id}`;
+      tab.setAttribute('role', 'tab');
+      tab.setAttribute('aria-controls', panel.id);
+      panel.setAttribute('role', 'tabpanel');
+      panel.setAttribute('aria-labelledby', tab.id);
+      if (!panel.hasAttribute('tabindex')) panel.tabIndex = 0;
+      tab.addEventListener('click', () => selectMethod(id));
+      tab.addEventListener('keydown', event => {
+        let next = index;
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = (index + 1) % methodTabs.length;
+        else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = (index - 1 + methodTabs.length) % methodTabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = methodTabs.length - 1;
+        else return;
+        event.preventDefault();
+        selectMethod(methodTabs[next].dataset.method, true);
+      });
+    });
+    const initialMethod = methodTabs.find(tab => tab.getAttribute('aria-selected') === 'true') || methodTabs[0];
+    selectMethod(initialMethod.dataset.method);
+  }
+
+  const reveals = Array.from(document.querySelectorAll('.reveal'));
+  if ('IntersectionObserver' in window && !reducedMotion.matches) {
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
+    reveals.forEach(element => {
+      if (element.getBoundingClientRect().top < window.innerHeight) element.classList.add('is-visible');
+      else revealObserver.observe(element);
+    });
+  } else {
+    reveals.forEach(element => element.classList.add('is-visible'));
+  }
+
+  document.addEventListener('click', event => {
+    const anchor = event.target.closest('a[data-link], a[data-cta]');
+    if (!anchor) return;
+    document.dispatchEvent(new CustomEvent('yan:cta', {
+      detail: {
+        destination: anchor.dataset.link || anchor.dataset.cta || '',
+        placement: anchor.dataset.placement || anchor.closest('section, header, footer')?.id || '',
+        language,
+      },
+    }));
+  });
+
+  root.classList.add('js');
+})();
+</script>
+</body></html>
